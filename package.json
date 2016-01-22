@@ -1,0 +1,10 @@
+{
+  "name": "mtrecipesmaker",
+  "main": "index.html",
+  "window": {
+    "toolbar": true
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

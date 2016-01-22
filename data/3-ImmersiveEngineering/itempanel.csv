@@ -1,0 +1,190 @@
+Item Name,Item ID,Item meta,Has NBT,Display Name
+ImmersiveEngineering:ore,448,0,false,Copper Ore
+ImmersiveEngineering:ore,448,1,false,Bauxite Ore
+ImmersiveEngineering:ore,448,2,false,Lead Ore
+ImmersiveEngineering:ore,448,3,false,Silver Ore
+ImmersiveEngineering:ore,448,4,false,Nickel Ore
+ImmersiveEngineering:storage,449,0,false,Block of Copper
+ImmersiveEngineering:storage,449,1,false,Block of Aluminium
+ImmersiveEngineering:storage,449,2,false,Block of Lead
+ImmersiveEngineering:storage,449,3,false,Block of Silver
+ImmersiveEngineering:storage,449,4,false,Block of Nickel
+ImmersiveEngineering:storage,449,5,false,Block of Constantan
+ImmersiveEngineering:storage,449,6,false,Block of Electrum
+ImmersiveEngineering:storage,449,7,false,Block of Steel
+ImmersiveEngineering:storage,449,8,false,Copper Wire Coil
+ImmersiveEngineering:storage,449,9,false,Electrum Wire Coil
+ImmersiveEngineering:storage,449,10,false,High-Voltage Wire Coil
+ImmersiveEngineering:storageSlab,450,0,false,Copper Slab
+ImmersiveEngineering:storageSlab,450,1,false,Aluminium Slab
+ImmersiveEngineering:storageSlab,450,2,false,Lead Slab
+ImmersiveEngineering:storageSlab,450,3,false,Silver Slab
+ImmersiveEngineering:storageSlab,450,4,false,Nickel Slab
+ImmersiveEngineering:storageSlab,450,5,false,Constantan Slab
+ImmersiveEngineering:storageSlab,450,6,false,Electrum Slab
+ImmersiveEngineering:storageSlab,450,7,false,Steel Slab
+ImmersiveEngineering:metalDevice,451,0,false,LV Wire Connector
+ImmersiveEngineering:metalDevice,451,1,false,LV Capacitor
+ImmersiveEngineering:metalDevice,451,1,true,LV Capacitor
+ImmersiveEngineering:metalDevice,451,2,false,MV Wire Connector
+ImmersiveEngineering:metalDevice,451,3,false,MV Capacitor
+ImmersiveEngineering:metalDevice,451,3,true,MV Capacitor
+ImmersiveEngineering:metalDevice,451,4,false,Transformer
+ImmersiveEngineering:metalDevice,451,5,false,HV Wire Relay
+ImmersiveEngineering:metalDevice,451,6,false,HV Wire Connector
+ImmersiveEngineering:metalDevice,451,7,false,HV Capacitor
+ImmersiveEngineering:metalDevice,451,7,true,HV Capacitor
+ImmersiveEngineering:metalDevice,451,8,false,HV Transformer
+ImmersiveEngineering:metalDevice,451,9,false,Kinetic Dynamo
+ImmersiveEngineering:metalDevice,451,10,false,Thermoelectric Generator
+ImmersiveEngineering:metalDevice,451,11,false,Conveyor Belt
+ImmersiveEngineering:metalDevice,451,12,false,External Heater
+ImmersiveEngineering:metalDevice,451,13,false,Item Router
+ImmersiveEngineering:metalDevice,451,14,false,Core Sample Drill
+ImmersiveEngineering:metalDevice2,452,0,false,Breaker Switch
+ImmersiveEngineering:metalDevice2,452,3,false,Powered Lantern
+ImmersiveEngineering:metalDevice2,452,4,false,Floodlight
+ImmersiveEngineering:metalDevice2,452,5,false,Fluid Pipe
+ImmersiveEngineering:metalDevice2,452,6,false,Fluid Pump
+ImmersiveEngineering:metalDecoration,453,0,false,Steel Fence
+ImmersiveEngineering:metalDecoration,453,1,false,Steel Scaffolding
+ImmersiveEngineering:metalDecoration,453,2,false,Lantern
+ImmersiveEngineering:metalDecoration,453,3,false,Structural Arm
+ImmersiveEngineering:metalDecoration,453,4,false,Radiator Block
+ImmersiveEngineering:metalDecoration,453,5,false,Heavy Engineering Block
+ImmersiveEngineering:metalDecoration,453,6,false,Generator Block
+ImmersiveEngineering:metalDecoration,453,7,false,Light Engineering Block
+ImmersiveEngineering:metalDecoration,453,8,false,Structural Cable Connector
+ImmersiveEngineering:metalDecoration,453,9,false,Steel Wall Mount
+ImmersiveEngineering:metalDecoration,453,10,false,Sheet Metal Block
+ImmersiveEngineering:metalMultiblock,454,0,false,Lightning Rod Base
+ImmersiveEngineering:metalMultiblock,454,2,false,Industrial Squeezer
+ImmersiveEngineering:metalMultiblock,454,3,false,Fermenter
+ImmersiveEngineering:woodenDevice,455,0,false,Wooden Post
+ImmersiveEngineering:woodenDevice,455,1,false,Water Wheel
+ImmersiveEngineering:woodenDevice,455,2,false,Windmill
+ImmersiveEngineering:woodenDevice,455,3,false,Improved Windmill
+ImmersiveEngineering:woodenDevice,455,4,false,Wooden Storage Crate
+ImmersiveEngineering:woodenDevice,455,5,false,Engineer's Workbench
+ImmersiveEngineering:woodenDevice,455,6,false,Wooden Barrel
+ImmersiveEngineering:woodenDecoration,456,1,false,Treated Wood Fence
+ImmersiveEngineering:woodenDecoration,456,2,false,Treated Wood Slab
+ImmersiveEngineering:woodenDecoration,456,4,false,Treated Wood Doubleslab
+ImmersiveEngineering:woodenDecoration,456,5,false,Treated Wood Scaffolding
+ImmersiveEngineering:woodenDecoration,456,6,false,Wooden Wall Mount
+ImmersiveEngineering:treatedWood,457,0,false,Treated Wood Planks
+ImmersiveEngineering:treatedWood,457,1,false,Treated Wood Planks
+ImmersiveEngineering:treatedWood,457,2,false,Treated Wood Planks
+ImmersiveEngineering:woodenStairs,458,0,false,Treated Wood Stairs
+ImmersiveEngineering:stoneDevice,459,4,false,Insulating Glass
+ImmersiveEngineering:stoneDecoration,460,0,false,Hempcrete
+ImmersiveEngineering:stoneDecoration,460,1,false,Coke Brick
+ImmersiveEngineering:stoneDecoration,460,2,false,Blast Brick
+ImmersiveEngineering:stoneDecoration,460,3,false,Block of Coal Coke
+ImmersiveEngineering:stoneDecoration,460,4,false,Concrete
+ImmersiveEngineering:stoneDecoration,460,5,false,Concrete Tile
+ImmersiveEngineering:hemp,461,0,false,Industrial Hemp
+ImmersiveEngineering:metal,4265,0,false,Copper Ingot
+ImmersiveEngineering:metal,4265,1,false,Aluminium Ingot
+ImmersiveEngineering:metal,4265,2,false,Lead Ingot
+ImmersiveEngineering:metal,4265,3,false,Silver Ingot
+ImmersiveEngineering:metal,4265,4,false,Nickel Ingot
+ImmersiveEngineering:metal,4265,5,false,Constantan Ingot
+ImmersiveEngineering:metal,4265,6,false,Electrum Ingot
+ImmersiveEngineering:metal,4265,7,false,Steel Ingot
+ImmersiveEngineering:metal,4265,8,false,Iron Grit
+ImmersiveEngineering:metal,4265,9,false,Gold Grit
+ImmersiveEngineering:metal,4265,10,false,Copper Grit
+ImmersiveEngineering:metal,4265,11,false,Aluminium Grit
+ImmersiveEngineering:metal,4265,12,false,Lead Grit
+ImmersiveEngineering:metal,4265,13,false,Silver Grit
+ImmersiveEngineering:metal,4265,14,false,Nickel Grit
+ImmersiveEngineering:metal,4265,15,false,Constantan Grit
+ImmersiveEngineering:metal,4265,16,false,Electrum Grit
+ImmersiveEngineering:metal,4265,17,false,Coke Dust
+ImmersiveEngineering:metal,4265,18,false,Quartz Dust
+ImmersiveEngineering:metal,4265,19,false,HOP Graphite Dust
+ImmersiveEngineering:metal,4265,20,false,HOP Graphite Ingot
+ImmersiveEngineering:metal,4265,21,false,Iron Nugget
+ImmersiveEngineering:metal,4265,22,false,Copper Nugget
+ImmersiveEngineering:metal,4265,23,false,Aluminium Nugget
+ImmersiveEngineering:metal,4265,24,false,Lead Nugget
+ImmersiveEngineering:metal,4265,25,false,Silver Nugget
+ImmersiveEngineering:metal,4265,26,false,Nickel Nugget
+ImmersiveEngineering:metal,4265,27,false,Constantan Nugget
+ImmersiveEngineering:metal,4265,28,false,Electrum Nugget
+ImmersiveEngineering:metal,4265,29,false,Steel Nugget
+ImmersiveEngineering:material,4266,0,false,Treated Stick
+ImmersiveEngineering:material,4266,1,false,Waterwheel Segment
+ImmersiveEngineering:material,4266,2,false,Windmill Blade
+ImmersiveEngineering:material,4266,3,false,Industrial Hemp Fiber
+ImmersiveEngineering:material,4266,4,false,Tough Fabric
+ImmersiveEngineering:material,4266,5,false,Improved Windmill Blade
+ImmersiveEngineering:material,4266,6,false,Coal Coke
+ImmersiveEngineering:material,4266,7,false,Revolver Barrel
+ImmersiveEngineering:material,4266,8,false,Revolver Drum
+ImmersiveEngineering:material,4266,9,false,Wooden Grip
+ImmersiveEngineering:material,4266,10,false,Revolver Hammer
+ImmersiveEngineering:material,4266,11,false,Iron Mechanical Component
+ImmersiveEngineering:material,4266,12,false,Steel Mechanical Component
+ImmersiveEngineering:material,4266,13,false,Slag
+ImmersiveEngineering:seed,4267,0,false,Industrial Hemp Seeds
+ImmersiveEngineering:coil,4268,0,false,LV Wire Coil
+ImmersiveEngineering:coil,4268,1,false,MV Wire Coil
+ImmersiveEngineering:coil,4268,2,false,HV Wire Coil
+ImmersiveEngineering:coil,4268,3,false,Hemp Rope Coil
+ImmersiveEngineering:coil,4268,4,false,Steel Cable Coil
+ImmersiveEngineering:tool,4269,0,false,Engineer's Hammer
+ImmersiveEngineering:tool,4269,1,false,Engineer's Wire Cutters
+ImmersiveEngineering:tool,4269,2,false,Engineer's Voltmeter
+ImmersiveEngineering:tool,4269,3,false,Engineer's Manual
+ImmersiveEngineering:revolver,4270,0,false,Revolver
+ImmersiveEngineering:revolver,4270,1,false,Revolver Speedloader
+ImmersiveEngineering:bullet,4271,0,false,Empty Casing
+ImmersiveEngineering:bullet,4271,1,false,Empty Shell
+ImmersiveEngineering:bullet,4271,2,false,Casull Cartridge
+ImmersiveEngineering:bullet,4271,3,false,Armor-Piercing Cartridge
+ImmersiveEngineering:bullet,4271,4,false,Buckshot Cartridge
+ImmersiveEngineering:bullet,4271,5,false,High-Explosive Cartridge
+ImmersiveEngineering:bullet,4271,6,false,Dragon's Breath Cartridge
+ImmersiveEngineering:bullet,4271,9,false,Silver Cartridge
+ImmersiveEngineering:bullet,4271,10,false,Phial Cartridge
+ImmersiveEngineering:fluidContainers,4272,0,false,Bottle of Creosote Oil
+ImmersiveEngineering:fluidContainers,4272,1,false,Bucket of Creosote Oil
+ImmersiveEngineering:fluidContainers,4272,2,false,Bottle of Plant Oil
+ImmersiveEngineering:fluidContainers,4272,3,false,Bucket of Plant Oil
+ImmersiveEngineering:fluidContainers,4272,4,false,Bottle of Ethanol
+ImmersiveEngineering:fluidContainers,4272,5,false,Bucket of Ethanol
+ImmersiveEngineering:fluidContainers,4272,6,false,Bottle of Biodiesel
+ImmersiveEngineering:fluidContainers,4272,7,false,Bucket of Biodiesel
+ImmersiveEngineering:drill,4273,0,false,Mining Drill
+ImmersiveEngineering:drillhead,4274,0,false,Steel Drill Head
+ImmersiveEngineering:drillhead,4274,1,false,Iron Drill Head
+ImmersiveEngineering:toolupgrade,4275,0,false,Internal Oxidizer Tank
+ImmersiveEngineering:toolupgrade,4275,1,false,Advanced Lubrication System
+ImmersiveEngineering:toolupgrade,4275,2,false,Additional Augers
+ImmersiveEngineering:toolupgrade,4275,3,false,Large Fuel Tank
+ImmersiveEngineering:toolupgrade,4275,4,false,Bayonet
+ImmersiveEngineering:toolupgrade,4275,5,false,Extended Magazine
+ImmersiveEngineering:toolupgrade,4275,6,false,Amplifier Electron Tubes
+ImmersiveEngineering:skyhook,4276,0,false,Engineer's Skyhook
+ImmersiveEngineering:blueprint,4277,0,false,Engineer's Blueprint
+ImmersiveEngineering:blueprint,4277,1,false,Engineer's Blueprint
+ImmersiveEngineering:blueprint,4277,2,false,Engineer's Blueprint
+ImmersiveEngineering:graphiteElectrode,4278,0,false,Graphite Electrode
+ImmersiveEngineering:shader,4279,0,true,Shader: Rosequartz
+ImmersiveEngineering:shader,4279,0,true,Shader: Argo
+ImmersiveEngineering:shader,4279,0,true,Shader: Sunstrike
+ImmersiveEngineering:shader,4279,0,true,Shader: Locus
+ImmersiveEngineering:shader,4279,0,true,Shader: Felix
+ImmersiveEngineering:shader,4279,0,true,Shader: Sharkface
+ImmersiveEngineering:shader,4279,0,true,Shader: Dragon's Breath
+ImmersiveEngineering:shader,4279,0,true,Shader: Falconmoon
+ImmersiveEngineering:shader,4279,0,true,Shader: Sponsor
+ImmersiveEngineering:shader,4279,0,true,Shader: Magnum
+ImmersiveEngineering:shader,4279,0,true,Shader: StormFlower
+ImmersiveEngineering:shader,4279,0,true,Shader: Mil???
+ImmersiveEngineering:shader,4279,0,true,Shader: Trident
+ImmersiveEngineering:shader,4279,0,true,Shader: Chloris
+ImmersiveEngineering:shader,4279,0,true,Shader: Crescent Rose
+ImmersiveEngineering:jerrycan,4281,0,false,Jerrycan

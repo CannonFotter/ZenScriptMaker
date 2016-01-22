@@ -1,0 +1,185 @@
+<div class="btn-toolbar" id="toolbar">
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-default active"><input type="radio" name="r0"
+                                                     data-target="0">有序
+        </label>
+        <label class="btn btn-default"><input type="radio" name="r0" class="btn-sm"
+                                              data-target="1">无序
+        </label>
+    </div>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-default active">
+            <input type="radio" name="r1" data-target="0">
+
+            <div class="glyphicon glyphicon-plus"></div>
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="r1" data-target="1">
+
+            <div class="glyphicon glyphicon-minus"></div>
+        </label>
+
+    </div>
+    <form class="form-inline">
+        <div class="form-group">
+            <select id="mod-select" class="form-control">
+                <!--<option value="0-mc">Minecraft</option>-->
+            </select>
+            <input type="text" class="form-control" placeholder="搜索">
+        </div>
+    </form>
+
+</div>
+<div class="container-fluid item-list">
+    <div class="row">
+        <div class="col-md-4">
+            <h4>item数据</h4>
+
+            <div id="item-list">
+                <table class="table table-striped table-hover">
+                    <thead id="">
+                    <tr id="item-list-head">
+                        <th>#</th>
+                        <th>附加值</th>
+                        <th>名称</th>
+                        <!--<th>文字ID</th>-->
+                        <th>追加</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--<tr>-->
+                    <!--<td>1</td>-->
+                    <!--<td>1</td>-->
+                    <!--<td>1</td>-->
+                    <!--<td>1</td>-->
+                    <!--<td>1</td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h4>合成编辑区</h4>
+
+            <div data-toggle="buttons">
+                <table class="table" id="editor">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            <label class="btn btn-default btn-craft-group active"><input type="radio" name="w"
+                                                                                         data-slot="0" data-val="">#0
+                            </label>
+                        </td>
+                        <td>
+                            <label class="btn btn-default btn-craft-group"><input type="radio" name="w"
+                                                                                  data-slot="1" data-val="">#1
+                            </label>
+                        </td>
+                        <td>
+                            <label class="btn btn-default btn-craft-group"><input type="radio" name="w"
+                                                                                  data-slot="2" data-val="">#2
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            <label class="btn btn-default btn-craft-group"><input type="radio" name="w"
+                                                                                  data-slot="3" data-val="">#3
+                            </label>
+                        </td>
+                        <td>
+                            <label class="btn btn-default btn-craft-group"><input type="radio" name="w"
+                                                                                  data-slot="4" data-val="">#4
+                            </label>
+                        </td>
+                        <td>
+                            <label class="btn btn-default btn-craft-group"><input type="radio" name="w"
+                                                                                  data-slot="5" data-val="">#5
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <label class="btn btn-default btn-craft-group"><input type="radio" name="w"
+                                                                                  data-slot="6" data-val="">#6
+                            </label>
+                        </td>
+                        <td>
+                            <label class="btn btn-default btn-craft-group"><input type="radio" name="w"
+                                                                                  data-slot="7" data-val="">#7
+                            </label>
+                        </td>
+                        <td>
+                            <label class="btn btn-default btn-craft-group"><input type="radio" name="w"
+                                                                                  data-slot="8" data-val="">#8
+                            </label>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="toolbar2">
+                <button class="btn btn-default" data-purpose="append">追加</button>
+                <button class="btn btn-default" id="copy" data-purpose="copy">复制到剪贴板</button>
+                <button class="btn btn-default" data-purpose="save">保存到.zs文件</button>
+                <textarea id="output" class="form-control" rows="3" placeholder="输出" readonly>Test</textarea>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <h4>Nav Box</h4>
+            <table id="nav-box" class="table table-hover">
+                <thead>
+                <tr>
+                    <!--名称-->
+                    <td id="nav-name"></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!--图标-->
+                    <td id="nav-icon">
+                        <img src="./data/0-mc/itempanel_icons/Acacia Leaves.png" alt=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</div>
+
+
+<h1>-----------------编辑脚本</h1>
+<script src="./js/edit.js"></script>

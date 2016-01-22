@@ -1,0 +1,12 @@
+{
+  "mod": {
+    "0-mc": "Minecraft",
+    "1-ic": "IC",
+    "2-tc": "TC",
+    "3-ImmersiveEngineering": "Immersive Engineering"
+  },
+  "methods": {
+    "0_0": "recipes.addShaped(<{$out}>*{$count},[$in]);",
+    "0_1": "recipes.removeShaped(<{$out}>*{$count},[$in]);"
+  }
+}

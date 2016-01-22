@@ -1,0 +1,8 @@
+{
+  "menu": {
+    "edit": "index.html",
+    "settings": "settings.html",
+    "help": "help.html",
+    "about": "about.html"
+  }
+}

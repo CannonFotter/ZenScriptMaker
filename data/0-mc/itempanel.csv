@@ -1,0 +1,590 @@
+Item Name,Item ID,Item meta,Has NBT,Display Name
+minecraft:stone,1,0,false,Stone
+minecraft:grass,2,0,false,Grass Block
+minecraft:dirt,3,0,false,Dirt
+minecraft:dirt,3,2,false,Podzol
+minecraft:cobblestone,4,0,false,Cobblestone
+minecraft:planks,5,0,false,Oak Wood Planks
+minecraft:planks,5,1,false,Spruce Wood Planks
+minecraft:planks,5,2,false,Birch Wood Planks
+minecraft:planks,5,3,false,Jungle Wood Planks
+minecraft:planks,5,4,false,Acacia Wood Planks
+minecraft:planks,5,5,false,Dark Oak Wood Planks
+minecraft:sapling,6,0,false,Oak Sapling
+minecraft:sapling,6,1,false,Spruce Sapling
+minecraft:sapling,6,2,false,Birch Sapling
+minecraft:sapling,6,3,false,Jungle Sapling
+minecraft:sapling,6,4,false,Acacia Sapling
+minecraft:sapling,6,5,false,Dark Oak Sapling
+minecraft:bedrock,7,0,false,Bedrock
+minecraft:flowing_water,8,0,false,Water
+minecraft:water,9,0,false,Water
+minecraft:flowing_lava,10,0,false,Lava
+minecraft:lava,11,0,false,Lava
+minecraft:sand,12,0,false,Sand
+minecraft:sand,12,1,false,Red Sand
+minecraft:gravel,13,0,false,Gravel
+minecraft:gold_ore,14,0,false,Gold Ore
+minecraft:iron_ore,15,0,false,Iron Ore
+minecraft:coal_ore,16,0,false,Coal Ore
+minecraft:log,17,0,false,Oak Wood
+minecraft:log,17,1,false,Spruce Wood
+minecraft:log,17,2,false,Birch Wood
+minecraft:log,17,3,false,Jungle Wood
+minecraft:leaves,18,0,false,Oak Leaves
+minecraft:leaves,18,1,false,Spruce Leaves
+minecraft:leaves,18,2,false,Birch Leaves
+minecraft:leaves,18,3,false,Jungle Leaves
+minecraft:sponge,19,0,false,Sponge
+minecraft:glass,20,0,false,Glass
+minecraft:lapis_ore,21,0,false,Lapis Lazuli Ore
+minecraft:lapis_block,22,0,false,Lapis Lazuli Block
+minecraft:dispenser,23,0,false,Dispenser
+minecraft:sandstone,24,0,false,Sandstone
+minecraft:sandstone,24,1,false,Chiseled Sandstone
+minecraft:sandstone,24,2,false,Smooth Sandstone
+minecraft:noteblock,25,0,false,Note Block
+minecraft:golden_rail,27,0,false,Powered Rail
+minecraft:detector_rail,28,0,false,Detector Rail
+minecraft:sticky_piston,29,0,false,Sticky Piston
+minecraft:web,30,0,false,Cobweb
+minecraft:tallgrass,31,1,false,Grass
+minecraft:tallgrass,31,2,false,Fern
+minecraft:deadbush,32,0,false,Dead Bush
+minecraft:piston,33,0,false,Piston
+minecraft:wool,35,0,false,Wool
+minecraft:wool,35,1,false,Orange Wool
+minecraft:wool,35,2,false,Magenta Wool
+minecraft:wool,35,3,false,Light Blue Wool
+minecraft:wool,35,4,false,Yellow Wool
+minecraft:wool,35,5,false,Lime Wool
+minecraft:wool,35,6,false,Pink Wool
+minecraft:wool,35,7,false,Gray Wool
+minecraft:wool,35,8,false,Light Gray Wool
+minecraft:wool,35,9,false,Cyan Wool
+minecraft:wool,35,10,false,Purple Wool
+minecraft:wool,35,11,false,Blue Wool
+minecraft:wool,35,12,false,Brown Wool
+minecraft:wool,35,13,false,Green Wool
+minecraft:wool,35,14,false,Red Wool
+minecraft:wool,35,15,false,Black Wool
+minecraft:yellow_flower,37,0,false,Dandelion
+minecraft:red_flower,38,0,false,Poppy
+minecraft:red_flower,38,1,false,Blue Orchid
+minecraft:red_flower,38,2,false,Allium
+minecraft:red_flower,38,3,false,Azure Bluet
+minecraft:red_flower,38,4,false,Red Tulip
+minecraft:red_flower,38,5,false,Orange Tulip
+minecraft:red_flower,38,6,false,White Tulip
+minecraft:red_flower,38,7,false,Pink Tulip
+minecraft:red_flower,38,8,false,Oxeye Daisy
+minecraft:brown_mushroom,39,0,false,Mushroom
+minecraft:red_mushroom,40,0,false,Mushroom
+minecraft:gold_block,41,0,false,Block of Gold
+minecraft:iron_block,42,0,false,Block of Iron
+minecraft:stone_slab,44,0,false,Stone Slab
+minecraft:stone_slab,44,1,false,Sandstone Slab
+minecraft:stone_slab,44,3,false,Cobblestone Slab
+minecraft:stone_slab,44,4,false,Bricks Slab
+minecraft:stone_slab,44,5,false,Stone Bricks Slab
+minecraft:stone_slab,44,6,false,Nether Brick Slab
+minecraft:stone_slab,44,7,false,Quartz Slab
+minecraft:brick_block,45,0,false,Bricks
+minecraft:tnt,46,0,false,TNT
+minecraft:bookshelf,47,0,false,Bookshelf
+minecraft:mossy_cobblestone,48,0,false,Moss Stone
+minecraft:obsidian,49,0,false,Obsidian
+minecraft:torch,50,0,false,Torch
+minecraft:fire,51,0,false,Fire
+minecraft:mob_spawner,52,64,false,Monster Spawner
+minecraft:mob_spawner,52,65,false,Monster Spawner
+minecraft:mob_spawner,52,66,false,Monster Spawner
+minecraft:mob_spawner,52,90,false,Monster Spawner
+minecraft:mob_spawner,52,91,false,Monster Spawner
+minecraft:mob_spawner,52,92,false,Monster Spawner
+minecraft:mob_spawner,52,93,false,Monster Spawner
+minecraft:mob_spawner,52,94,false,Monster Spawner
+minecraft:mob_spawner,52,95,false,Monster Spawner
+minecraft:mob_spawner,52,96,false,Monster Spawner
+minecraft:mob_spawner,52,97,false,Monster Spawner
+minecraft:mob_spawner,52,98,false,Monster Spawner
+minecraft:mob_spawner,52,99,false,Monster Spawner
+minecraft:mob_spawner,52,100,false,Monster Spawner
+minecraft:mob_spawner,52,50,false,Monster Spawner
+minecraft:mob_spawner,52,51,false,Monster Spawner
+minecraft:mob_spawner,52,52,false,Monster Spawner
+minecraft:mob_spawner,52,53,false,Monster Spawner
+minecraft:mob_spawner,52,54,false,Monster Spawner
+minecraft:mob_spawner,52,55,false,Monster Spawner
+minecraft:mob_spawner,52,56,false,Monster Spawner
+minecraft:mob_spawner,52,120,false,Monster Spawner
+minecraft:mob_spawner,52,57,false,Monster Spawner
+minecraft:mob_spawner,52,58,false,Monster Spawner
+minecraft:mob_spawner,52,59,false,Monster Spawner
+minecraft:mob_spawner,52,60,false,Monster Spawner
+minecraft:mob_spawner,52,61,false,Monster Spawner
+minecraft:mob_spawner,52,62,false,Monster Spawner
+minecraft:oak_stairs,53,0,false,Oak Wood Stairs
+minecraft:chest,54,0,false,Chest
+minecraft:diamond_ore,56,0,false,Diamond Ore
+minecraft:diamond_block,57,0,false,Block of Diamond
+minecraft:crafting_table,58,0,false,Crafting Table
+minecraft:farmland,60,0,false,Farmland
+minecraft:furnace,61,0,false,Furnace
+minecraft:lit_furnace,62,0,false,Furnace
+minecraft:ladder,65,0,false,Ladder
+minecraft:rail,66,0,false,Rail
+minecraft:stone_stairs,67,0,false,Stone Stairs
+minecraft:lever,69,0,false,Lever
+minecraft:stone_pressure_plate,70,0,false,Pressure Plate
+minecraft:wooden_pressure_plate,72,0,false,Pressure Plate
+minecraft:redstone_ore,73,0,false,Redstone Ore
+minecraft:redstone_torch,76,0,false,Redstone Torch
+minecraft:stone_button,77,0,false,Button
+minecraft:snow_layer,78,0,false,Snow
+minecraft:ice,79,0,false,Ice
+minecraft:snow,80,0,false,Snow
+minecraft:cactus,81,0,false,Cactus
+minecraft:clay,82,0,false,Clay
+minecraft:jukebox,84,0,false,Jukebox
+minecraft:fence,85,0,false,Fence
+minecraft:pumpkin,86,0,false,Pumpkin
+minecraft:netherrack,87,0,false,Netherrack
+minecraft:soul_sand,88,0,false,Soul Sand
+minecraft:glowstone,89,0,false,Glowstone
+minecraft:portal,90,0,false,Portal
+minecraft:lit_pumpkin,91,0,false,Jack o'Lantern
+minecraft:stained_glass,95,0,false,White Stained Glass
+minecraft:stained_glass,95,1,false,Orange Stained Glass
+minecraft:stained_glass,95,2,false,Magenta Stained Glass
+minecraft:stained_glass,95,3,false,Light Blue Stained Glass
+minecraft:stained_glass,95,4,false,Yellow Stained Glass
+minecraft:stained_glass,95,5,false,Lime Stained Glass
+minecraft:stained_glass,95,6,false,Pink Stained Glass
+minecraft:stained_glass,95,7,false,Gray Stained Glass
+minecraft:stained_glass,95,8,false,Light Gray Stained Glass
+minecraft:stained_glass,95,9,false,Cyan Stained Glass
+minecraft:stained_glass,95,10,false,Purple Stained Glass
+minecraft:stained_glass,95,11,false,Blue Stained Glass
+minecraft:stained_glass,95,12,false,Brown Stained Glass
+minecraft:stained_glass,95,13,false,Green Stained Glass
+minecraft:stained_glass,95,14,false,Red Stained Glass
+minecraft:stained_glass,95,15,false,Black Stained Glass
+minecraft:trapdoor,96,0,false,Trapdoor
+minecraft:monster_egg,97,0,false,Stone Monster Egg
+minecraft:monster_egg,97,1,false,Cobblestone Monster Egg
+minecraft:monster_egg,97,2,false,Stone Brick Monster Egg
+minecraft:monster_egg,97,3,false,Mossy Stone Brick Monster Egg
+minecraft:monster_egg,97,4,false,Cracked Stone Brick Monster Egg
+minecraft:monster_egg,97,5,false,Chiseled Stone Brick Monster Egg
+minecraft:stonebrick,98,0,false,Stone Bricks
+minecraft:stonebrick,98,1,false,Mossy Stone Bricks
+minecraft:stonebrick,98,2,false,Cracked Stone Bricks
+minecraft:stonebrick,98,3,false,Chiseled Stone Bricks
+minecraft:brown_mushroom_block,99,0,false,Mushroom
+minecraft:red_mushroom_block,100,0,false,Mushroom
+minecraft:iron_bars,101,0,false,Iron Bars
+minecraft:glass_pane,102,0,false,Glass Pane
+minecraft:melon_block,103,0,false,Melon
+minecraft:vine,106,0,false,Vines
+minecraft:fence_gate,107,0,false,Fence Gate
+minecraft:brick_stairs,108,0,false,Brick Stairs
+minecraft:stone_brick_stairs,109,0,false,Stone Brick Stairs
+minecraft:mycelium,110,0,false,Mycelium
+minecraft:waterlily,111,0,false,Lily Pad
+minecraft:nether_brick,112,0,false,Nether Brick
+minecraft:nether_brick_fence,113,0,false,Nether Brick Fence
+minecraft:nether_brick_stairs,114,0,false,Nether Brick Stairs
+minecraft:enchanting_table,116,0,false,Enchantment Table
+minecraft:end_portal,119,0,false,tile.null.name
+minecraft:end_portal_frame,120,0,false,End Portal
+minecraft:end_stone,121,0,false,End Stone
+minecraft:dragon_egg,122,0,false,Dragon Egg
+minecraft:redstone_lamp,123,0,false,Redstone Lamp
+minecraft:wooden_slab,126,0,false,Oak Wood Slab
+minecraft:wooden_slab,126,1,false,Spruce Wood Slab
+minecraft:wooden_slab,126,2,false,Birch Wood Slab
+minecraft:wooden_slab,126,3,false,Jungle Wood Slab
+minecraft:wooden_slab,126,4,false,Acacia Wood Slab
+minecraft:wooden_slab,126,5,false,Dark Oak Wood Slab
+minecraft:sandstone_stairs,128,0,false,Sandstone Stairs
+minecraft:emerald_ore,129,0,false,Emerald Ore
+minecraft:ender_chest,130,0,false,Ender Chest
+minecraft:tripwire_hook,131,0,false,Tripwire Hook
+minecraft:emerald_block,133,0,false,Block of Emerald
+minecraft:spruce_stairs,134,0,false,Spruce Wood Stairs
+minecraft:birch_stairs,135,0,false,Birch Wood Stairs
+minecraft:jungle_stairs,136,0,false,Jungle Wood Stairs
+minecraft:command_block,137,0,false,Command Block
+minecraft:beacon,138,0,false,Beacon
+minecraft:cobblestone_wall,139,0,false,Cobblestone Wall
+minecraft:cobblestone_wall,139,1,false,Mossy Cobblestone Wall
+minecraft:wooden_button,143,0,false,Button
+minecraft:anvil,145,0,false,Anvil
+minecraft:anvil,145,1,false,Slightly Damaged Anvil
+minecraft:anvil,145,2,false,Very Damaged Anvil
+minecraft:trapped_chest,146,0,false,Trapped Chest
+minecraft:light_weighted_pressure_plate,147,0,false,Weighted Pressure Plate (Light)
+minecraft:heavy_weighted_pressure_plate,148,0,false,Weighted Pressure Plate (Heavy)
+minecraft:daylight_detector,151,0,false,Daylight Sensor
+minecraft:redstone_block,152,0,false,Block of Redstone
+minecraft:quartz_ore,153,0,false,Nether Quartz Ore
+minecraft:hopper,154,0,false,Hopper
+minecraft:quartz_block,155,0,false,Block of Quartz
+minecraft:quartz_block,155,1,false,Chiseled Quartz Block
+minecraft:quartz_block,155,2,false,Pillar Quartz Block
+minecraft:quartz_stairs,156,0,false,Quartz Stairs
+minecraft:activator_rail,157,0,false,Activator Rail
+minecraft:dropper,158,0,false,Dropper
+minecraft:stained_hardened_clay,159,0,false,White Stained Clay
+minecraft:stained_hardened_clay,159,1,false,Orange Stained Clay
+minecraft:stained_hardened_clay,159,2,false,Magenta Stained Clay
+minecraft:stained_hardened_clay,159,3,false,Light Blue Stained Clay
+minecraft:stained_hardened_clay,159,4,false,Yellow Stained Clay
+minecraft:stained_hardened_clay,159,5,false,Lime Stained Clay
+minecraft:stained_hardened_clay,159,6,false,Pink Stained Clay
+minecraft:stained_hardened_clay,159,7,false,Gray Stained Clay
+minecraft:stained_hardened_clay,159,8,false,Light Gray Stained Clay
+minecraft:stained_hardened_clay,159,9,false,Cyan Stained Clay
+minecraft:stained_hardened_clay,159,10,false,Purple Stained Clay
+minecraft:stained_hardened_clay,159,11,false,Blue Stained Clay
+minecraft:stained_hardened_clay,159,12,false,Brown Stained Clay
+minecraft:stained_hardened_clay,159,13,false,Green Stained Clay
+minecraft:stained_hardened_clay,159,14,false,Red Stained Clay
+minecraft:stained_hardened_clay,159,15,false,Black Stained Clay
+minecraft:stained_glass_pane,160,0,false,White Stained Glass Pane
+minecraft:stained_glass_pane,160,1,false,Orange Stained Glass Pane
+minecraft:stained_glass_pane,160,2,false,Magenta Stained Glass Pane
+minecraft:stained_glass_pane,160,3,false,Light Blue Stained Glass Pane
+minecraft:stained_glass_pane,160,4,false,Yellow Stained Glass Pane
+minecraft:stained_glass_pane,160,5,false,Lime Stained Glass Pane
+minecraft:stained_glass_pane,160,6,false,Pink Stained Glass Pane
+minecraft:stained_glass_pane,160,7,false,Gray Stained Glass Pane
+minecraft:stained_glass_pane,160,8,false,Light Gray Stained Glass Pane
+minecraft:stained_glass_pane,160,9,false,Cyan Stained Glass Pane
+minecraft:stained_glass_pane,160,10,false,Purple Stained Glass Pane
+minecraft:stained_glass_pane,160,11,false,Blue Stained Glass Pane
+minecraft:stained_glass_pane,160,12,false,Brown Stained Glass Pane
+minecraft:stained_glass_pane,160,13,false,Green Stained Glass Pane
+minecraft:stained_glass_pane,160,14,false,Red Stained Glass Pane
+minecraft:stained_glass_pane,160,15,false,Black Stained Glass Pane
+minecraft:leaves2,161,0,false,Acacia Leaves
+minecraft:leaves2,161,1,false,Dark Oak Leaves
+minecraft:log2,162,0,false,Acacia Wood
+minecraft:log2,162,1,false,Dark Oak Wood
+minecraft:acacia_stairs,163,0,false,Acacia Wood Stairs
+minecraft:dark_oak_stairs,164,0,false,Dark Oak Wood Stairs
+minecraft:hay_block,170,0,false,Hay Bale
+minecraft:carpet,171,0,false,Carpet
+minecraft:carpet,171,1,false,Orange Carpet
+minecraft:carpet,171,2,false,Magenta Carpet
+minecraft:carpet,171,3,false,Light Blue Carpet
+minecraft:carpet,171,4,false,Yellow Carpet
+minecraft:carpet,171,5,false,Lime Carpet
+minecraft:carpet,171,6,false,Pink Carpet
+minecraft:carpet,171,7,false,Gray Carpet
+minecraft:carpet,171,8,false,Light Gray Carpet
+minecraft:carpet,171,9,false,Cyan Carpet
+minecraft:carpet,171,10,false,Purple Carpet
+minecraft:carpet,171,11,false,Blue Carpet
+minecraft:carpet,171,12,false,Brown Carpet
+minecraft:carpet,171,13,false,Green Carpet
+minecraft:carpet,171,14,false,Red Carpet
+minecraft:carpet,171,15,false,Black Carpet
+minecraft:hardened_clay,172,0,false,Hardened Clay
+minecraft:coal_block,173,0,false,Block of Coal
+minecraft:packed_ice,174,0,false,Packed Ice
+minecraft:double_plant,175,0,false,Sunflower
+minecraft:double_plant,175,1,false,Lilac
+minecraft:double_plant,175,2,false,Double Tallgrass
+minecraft:double_plant,175,3,false,Large Fern
+minecraft:double_plant,175,4,false,Rose Bush
+minecraft:double_plant,175,5,false,Peony
+minecraft:iron_shovel,256,0,false,Iron Shovel
+minecraft:iron_pickaxe,257,0,false,Iron Pickaxe
+minecraft:iron_axe,258,0,false,Iron Axe
+minecraft:flint_and_steel,259,0,false,Flint and Steel
+minecraft:apple,260,0,false,Apple
+minecraft:bow,261,0,false,Bow
+minecraft:arrow,262,0,false,Arrow
+minecraft:coal,263,0,false,Coal
+minecraft:coal,263,1,false,Charcoal
+minecraft:diamond,264,0,false,Diamond
+minecraft:iron_ingot,265,0,false,Iron Ingot
+minecraft:gold_ingot,266,0,false,Gold Ingot
+minecraft:iron_sword,267,0,false,Iron Sword
+minecraft:wooden_sword,268,0,false,Wooden Sword
+minecraft:wooden_shovel,269,0,false,Wooden Shovel
+minecraft:wooden_pickaxe,270,0,false,Wooden Pickaxe
+minecraft:wooden_axe,271,0,false,Wooden Axe
+minecraft:stone_sword,272,0,false,Stone Sword
+minecraft:stone_shovel,273,0,false,Stone Shovel
+minecraft:stone_pickaxe,274,0,false,Stone Pickaxe
+minecraft:stone_axe,275,0,false,Stone Axe
+minecraft:diamond_sword,276,0,false,Diamond Sword
+minecraft:diamond_shovel,277,0,false,Diamond Shovel
+minecraft:diamond_pickaxe,278,0,false,Diamond Pickaxe
+minecraft:diamond_axe,279,0,false,Diamond Axe
+minecraft:stick,280,0,false,Stick
+minecraft:bowl,281,0,false,Bowl
+minecraft:mushroom_stew,282,0,false,Mushroom Stew
+minecraft:golden_sword,283,0,false,Golden Sword
+minecraft:golden_shovel,284,0,false,Golden Shovel
+minecraft:golden_pickaxe,285,0,false,Golden Pickaxe
+minecraft:golden_axe,286,0,false,Golden Axe
+minecraft:string,287,0,false,String
+minecraft:feather,288,0,false,Feather
+minecraft:gunpowder,289,0,false,Gunpowder
+minecraft:wooden_hoe,290,0,false,Wooden Hoe
+minecraft:stone_hoe,291,0,false,Stone Hoe
+minecraft:iron_hoe,292,0,false,Iron Hoe
+minecraft:diamond_hoe,293,0,false,Diamond Hoe
+minecraft:golden_hoe,294,0,false,Golden Hoe
+minecraft:wheat_seeds,295,0,false,Seeds
+minecraft:wheat,296,0,false,Wheat
+minecraft:bread,297,0,false,Bread
+minecraft:leather_helmet,298,0,false,Leather Cap
+minecraft:leather_chestplate,299,0,false,Leather Tunic
+minecraft:leather_leggings,300,0,false,Leather Pants
+minecraft:leather_boots,301,0,false,Leather Boots
+minecraft:chainmail_helmet,302,0,false,Chain Helmet
+minecraft:chainmail_chestplate,303,0,false,Chain Chestplate
+minecraft:chainmail_leggings,304,0,false,Chain Leggings
+minecraft:chainmail_boots,305,0,false,Chain Boots
+minecraft:iron_helmet,306,0,false,Iron Helmet
+minecraft:iron_chestplate,307,0,false,Iron Chestplate
+minecraft:iron_leggings,308,0,false,Iron Leggings
+minecraft:iron_boots,309,0,false,Iron Boots
+minecraft:diamond_helmet,310,0,false,Diamond Helmet
+minecraft:diamond_chestplate,311,0,false,Diamond Chestplate
+minecraft:diamond_leggings,312,0,false,Diamond Leggings
+minecraft:diamond_boots,313,0,false,Diamond Boots
+minecraft:golden_helmet,314,0,false,Golden Helmet
+minecraft:golden_chestplate,315,0,false,Golden Chestplate
+minecraft:golden_leggings,316,0,false,Golden Leggings
+minecraft:golden_boots,317,0,false,Golden Boots
+minecraft:flint,318,0,false,Flint
+minecraft:porkchop,319,0,false,Raw Porkchop
+minecraft:cooked_porkchop,320,0,false,Cooked Porkchop
+minecraft:painting,321,0,false,Painting
+minecraft:golden_apple,322,0,false,Golden Apple
+minecraft:golden_apple,322,1,false,Golden Apple
+minecraft:sign,323,0,false,Sign
+minecraft:wooden_door,324,0,false,Wooden Door
+minecraft:bucket,325,0,false,Bucket
+minecraft:water_bucket,326,0,false,Water Bucket
+minecraft:lava_bucket,327,0,false,Lava Bucket
+minecraft:minecart,328,0,false,Minecart
+minecraft:saddle,329,0,false,Saddle
+minecraft:iron_door,330,0,false,Iron Door
+minecraft:redstone,331,0,false,Redstone
+minecraft:snowball,332,0,false,Snowball
+minecraft:boat,333,0,false,Boat
+minecraft:leather,334,0,false,Leather
+minecraft:milk_bucket,335,0,false,Milk
+minecraft:brick,336,0,false,Brick
+minecraft:clay_ball,337,0,false,Clay
+minecraft:reeds,338,0,false,Sugar Canes
+minecraft:paper,339,0,false,Paper
+minecraft:book,340,0,false,Book
+minecraft:slime_ball,341,0,false,Slimeball
+minecraft:chest_minecart,342,0,false,Minecart with Chest
+minecraft:furnace_minecart,343,0,false,Minecart with Furnace
+minecraft:egg,344,0,false,Egg
+minecraft:compass,345,0,false,Compass
+minecraft:fishing_rod,346,0,false,Fishing Rod
+minecraft:clock,347,0,false,Clock
+minecraft:glowstone_dust,348,0,false,Glowstone Dust
+minecraft:fish,349,0,false,Raw Fish
+minecraft:fish,349,1,false,Raw Salmon
+minecraft:fish,349,2,false,Clownfish
+minecraft:fish,349,3,false,Pufferfish
+minecraft:cooked_fished,350,0,false,Cooked Fish
+minecraft:cooked_fished,350,1,false,Cooked Salmon
+minecraft:dye,351,0,false,Ink Sac
+minecraft:dye,351,1,false,Rose Red
+minecraft:dye,351,2,false,Cactus Green
+minecraft:dye,351,3,false,Cocoa Beans
+minecraft:dye,351,4,false,Lapis Lazuli
+minecraft:dye,351,5,false,Purple Dye
+minecraft:dye,351,6,false,Cyan Dye
+minecraft:dye,351,7,false,Light Gray Dye
+minecraft:dye,351,8,false,Gray Dye
+minecraft:dye,351,9,false,Pink Dye
+minecraft:dye,351,10,false,Lime Dye
+minecraft:dye,351,11,false,Dandelion Yellow
+minecraft:dye,351,12,false,Light Blue Dye
+minecraft:dye,351,13,false,Magenta Dye
+minecraft:dye,351,14,false,Orange Dye
+minecraft:dye,351,15,false,Bone Meal
+minecraft:bone,352,0,false,Bone
+minecraft:sugar,353,0,false,Sugar
+minecraft:cake,354,0,false,Cake
+minecraft:bed,355,0,false,Bed
+minecraft:repeater,356,0,false,Redstone Repeater
+minecraft:cookie,357,0,false,Cookie
+minecraft:filled_map,358,0,false,Map #0
+minecraft:shears,359,0,false,Shears
+minecraft:melon,360,0,false,Melon
+minecraft:pumpkin_seeds,361,0,false,Pumpkin Seeds
+minecraft:melon_seeds,362,0,false,Melon Seeds
+minecraft:beef,363,0,false,Raw Beef
+minecraft:cooked_beef,364,0,false,Steak
+minecraft:chicken,365,0,false,Raw Chicken
+minecraft:cooked_chicken,366,0,false,Cooked Chicken
+minecraft:rotten_flesh,367,0,false,Rotten Flesh
+minecraft:ender_pearl,368,0,false,Ender Pearl
+minecraft:blaze_rod,369,0,false,Blaze Rod
+minecraft:ghast_tear,370,0,false,Ghast Tear
+minecraft:gold_nugget,371,0,false,Gold Nugget
+minecraft:nether_wart,372,0,false,Nether Wart
+minecraft:potion,373,0,false,Water Bottle
+minecraft:potion,373,16,false,Awkward Potion
+minecraft:potion,373,32,false,Thick Potion
+minecraft:potion,373,64,false,Mundane Potion
+minecraft:potion,373,8192,false,Mundane Potion
+minecraft:potion,373,8193,false,Potion of Regeneration
+minecraft:potion,373,8194,false,Potion of Swiftness
+minecraft:potion,373,8195,false,Potion of Fire Resistance
+minecraft:potion,373,8196,false,Potion of Poison
+minecraft:potion,373,8197,false,Potion of Healing
+minecraft:potion,373,8198,false,Potion of Night Vision
+minecraft:potion,373,8200,false,Potion of Weakness
+minecraft:potion,373,8201,false,Potion of Strength
+minecraft:potion,373,8202,false,Potion of Slowness
+minecraft:potion,373,8204,false,Potion of Harming
+minecraft:potion,373,8205,false,Potion of Water Breathing
+minecraft:potion,373,8206,false,Potion of Invisibility
+minecraft:potion,373,8225,false,Potion of Regeneration
+minecraft:potion,373,8226,false,Potion of Swiftness
+minecraft:potion,373,8228,false,Potion of Poison
+minecraft:potion,373,8229,false,Potion of Healing
+minecraft:potion,373,8232,false,Potion of Weakness
+minecraft:potion,373,8233,false,Potion of Strength
+minecraft:potion,373,8234,false,Potion of Slowness
+minecraft:potion,373,8236,false,Potion of Harming
+minecraft:potion,373,8257,false,Potion of Regeneration
+minecraft:potion,373,8258,false,Potion of Swiftness
+minecraft:potion,373,8259,false,Potion of Fire Resistance
+minecraft:potion,373,8260,false,Potion of Poison
+minecraft:potion,373,8262,false,Potion of Night Vision
+minecraft:potion,373,8264,false,Potion of Weakness
+minecraft:potion,373,8265,false,Potion of Strength
+minecraft:potion,373,8266,false,Potion of Slowness
+minecraft:potion,373,8268,false,Potion of Harming
+minecraft:potion,373,8269,false,Potion of Water Breathing
+minecraft:potion,373,8270,false,Potion of Invisibility
+minecraft:potion,373,16384,false,Mundane Potion
+minecraft:potion,373,16385,false,Splash Potion of Regeneration
+minecraft:potion,373,16386,false,Splash Potion of Swiftness
+minecraft:potion,373,16387,false,Splash Potion of Fire Resistance
+minecraft:potion,373,16388,false,Splash Potion of Poison
+minecraft:potion,373,16389,false,Splash Potion of Healing
+minecraft:potion,373,16390,false,Splash Potion of Night Vision
+minecraft:potion,373,16392,false,Splash Potion of Weakness
+minecraft:potion,373,16393,false,Splash Potion of Strength
+minecraft:potion,373,16394,false,Splash Potion of Slowness
+minecraft:potion,373,16396,false,Splash Potion of Harming
+minecraft:potion,373,16397,false,Splash Potion of Water Breathing
+minecraft:potion,373,16398,false,Splash Potion of Invisibility
+minecraft:potion,373,16417,false,Splash Potion of Regeneration
+minecraft:potion,373,16418,false,Splash Potion of Swiftness
+minecraft:potion,373,16420,false,Splash Potion of Poison
+minecraft:potion,373,16421,false,Splash Potion of Healing
+minecraft:potion,373,16424,false,Splash Potion of Weakness
+minecraft:potion,373,16425,false,Splash Potion of Strength
+minecraft:potion,373,16426,false,Splash Potion of Slowness
+minecraft:potion,373,16428,false,Splash Potion of Harming
+minecraft:potion,373,16449,false,Splash Potion of Regeneration
+minecraft:potion,373,16450,false,Splash Potion of Swiftness
+minecraft:potion,373,16451,false,Splash Potion of Fire Resistance
+minecraft:potion,373,16452,false,Splash Potion of Poison
+minecraft:potion,373,16454,false,Splash Potion of Night Vision
+minecraft:potion,373,16456,false,Splash Potion of Weakness
+minecraft:potion,373,16457,false,Splash Potion of Strength
+minecraft:potion,373,16458,false,Splash Potion of Slowness
+minecraft:potion,373,16460,false,Splash Potion of Harming
+minecraft:potion,373,16461,false,Splash Potion of Water Breathing
+minecraft:potion,373,16462,false,Splash Potion of Invisibility
+minecraft:glass_bottle,374,0,false,Glass Bottle
+minecraft:spider_eye,375,0,false,Spider Eye
+minecraft:fermented_spider_eye,376,0,false,Fermented Spider Eye
+minecraft:blaze_powder,377,0,false,Blaze Powder
+minecraft:magma_cream,378,0,false,Magma Cream
+minecraft:brewing_stand,379,0,false,Brewing Stand
+minecraft:cauldron,380,0,false,Cauldron
+minecraft:ender_eye,381,0,false,Eye of Ender
+minecraft:speckled_melon,382,0,false,Glistering Melon
+minecraft:spawn_egg,383,50,false,Spawn Creeper
+minecraft:spawn_egg,383,51,false,Spawn Skeleton
+minecraft:spawn_egg,383,52,false,Spawn Spider
+minecraft:spawn_egg,383,54,false,Spawn Zombie
+minecraft:spawn_egg,383,55,false,Spawn Slime
+minecraft:spawn_egg,383,56,false,Spawn Ghast
+minecraft:spawn_egg,383,57,false,Spawn Zombie Pigman
+minecraft:spawn_egg,383,58,false,Spawn Enderman
+minecraft:spawn_egg,383,59,false,Spawn Cave Spider
+minecraft:spawn_egg,383,60,false,Spawn Silverfish
+minecraft:spawn_egg,383,61,false,Spawn Blaze
+minecraft:spawn_egg,383,62,false,Spawn Magma Cube
+minecraft:spawn_egg,383,65,false,Spawn Bat
+minecraft:spawn_egg,383,66,false,Spawn Witch
+minecraft:spawn_egg,383,90,false,Spawn Pig
+minecraft:spawn_egg,383,91,false,Spawn Sheep
+minecraft:spawn_egg,383,92,false,Spawn Cow
+minecraft:spawn_egg,383,93,false,Spawn Chicken
+minecraft:spawn_egg,383,94,false,Spawn Squid
+minecraft:spawn_egg,383,95,false,Spawn Wolf
+minecraft:spawn_egg,383,96,false,Spawn Mooshroom
+minecraft:spawn_egg,383,98,false,Spawn Ocelot
+minecraft:spawn_egg,383,100,false,Spawn Horse
+minecraft:spawn_egg,383,120,false,Spawn Villager
+minecraft:spawn_egg,383,97,false,Spawn Snow Golem
+minecraft:spawn_egg,383,99,false,Spawn Iron Golem
+minecraft:experience_bottle,384,0,false,Bottle o' Enchanting
+minecraft:fire_charge,385,0,false,Fire Charge
+minecraft:writable_book,386,0,false,Book and Quill
+minecraft:written_book,387,0,false,Written Book
+minecraft:emerald,388,0,false,Emerald
+minecraft:item_frame,389,0,false,Item Frame
+minecraft:flower_pot,390,0,false,Flower Pot
+minecraft:carrot,391,0,false,Carrot
+minecraft:potato,392,0,false,Potato
+minecraft:baked_potato,393,0,false,Baked Potato
+minecraft:poisonous_potato,394,0,false,Poisonous Potato
+minecraft:map,395,0,false,Empty Map
+minecraft:golden_carrot,396,0,false,Golden Carrot
+minecraft:skull,397,0,false,Skeleton Skull
+minecraft:skull,397,1,false,Wither Skeleton Skull
+minecraft:skull,397,2,false,Zombie Head
+minecraft:skull,397,3,false,Head
+minecraft:skull,397,4,false,Creeper Head
+minecraft:carrot_on_a_stick,398,0,false,Carrot on a Stick
+minecraft:nether_star,399,0,false,Nether Star
+minecraft:pumpkin_pie,400,0,false,Pumpkin Pie
+minecraft:fireworks,401,0,false,Firework Rocket
+minecraft:firework_charge,402,0,false,Firework Star
+minecraft:enchanted_book,403,0,false,Enchanted Book
+minecraft:comparator,404,0,false,Redstone Comparator
+minecraft:netherbrick,405,0,false,Nether Brick
+minecraft:quartz,406,0,false,Nether Quartz
+minecraft:tnt_minecart,407,0,false,Minecart with TNT
+minecraft:hopper_minecart,408,0,false,Minecart with Hopper
+minecraft:iron_horse_armor,417,0,false,Iron Horse Armor
+minecraft:golden_horse_armor,418,0,false,Gold Horse Armor
+minecraft:diamond_horse_armor,419,0,false,Diamond Horse Armor
+minecraft:lead,420,0,false,Lead
+minecraft:name_tag,421,0,false,Name Tag
+minecraft:command_block_minecart,422,0,false,Minecart with Command Block
+minecraft:record_13,2256,0,false,Music Disc
+minecraft:record_cat,2257,0,false,Music Disc
+minecraft:record_blocks,2258,0,false,Music Disc
+minecraft:record_chirp,2259,0,false,Music Disc
+minecraft:record_far,2260,0,false,Music Disc
+minecraft:record_mall,2261,0,false,Music Disc
+minecraft:record_mellohi,2262,0,false,Music Disc
+minecraft:record_stal,2263,0,false,Music Disc
+minecraft:record_strad,2264,0,false,Music Disc
+minecraft:record_ward,2265,0,false,Music Disc
+minecraft:record_11,2266,0,false,Music Disc
+minecraft:record_wait,2267,0,false,Music Disc

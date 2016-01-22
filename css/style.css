@@ -1,0 +1,33 @@
+p, a, h1, h2, h3, h4, dl, dd, dt, div {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif !important;
+    font-weight: normal;
+}
+
+body {
+    margin: 10px;
+}
+
+nav {
+    padding-bottom: 10px;
+}
+
+#mod-select {
+    margin-left: 8px;
+    width: 160px;
+}
+
+#item-list {
+    margin-top: 8px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 500px;
+    width: auto;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#output {
+    margin-top: 8px;
+}
