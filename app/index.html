@@ -130,13 +130,22 @@
                             </label>
                         </td>
                     </tr>
+                    <tr>
+                        <td>输出</td>
+                        <td colspan="3">
+                            <label class="btn btn-default btn-craft-group"><input type="radio" name="w"
+                                                                                  data-slot="8" data-val="">#9
+                            </label>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
             <div id="toolbar2">
                 <button class="btn btn-default" data-purpose="append">追加</button>
-                <button class="btn btn-default" id="copy" data-purpose="copy">复制到剪贴板</button>
+                <button class="btn btn-default disabled" id="copy" data-purpose="copy">复制到剪贴板</button>
                 <button class="btn btn-default" data-purpose="save">保存到.zs文件</button>
+                <!--<input type="file" id="file">-->
                 <textarea id="output" class="form-control" rows="3" placeholder="输出" readonly>Test</textarea>
             </div>
 

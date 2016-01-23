@@ -23,19 +23,6 @@
 </main><script src="js/lib/jquery/dist/jquery.min.js"></script>
 <script src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/lib/jquery-csv/src/jquery.csv.min.js"></script>
-<script src="js/lib/jquery.zeroclipboard/dist/jquery.zeroclipboard.min.js"></script>
 <script src="js/app.js"></script>
-<script>
-    $.event.special.copy.options.trustedDomains = ["*"];
-    jQuery(document).ready(function($) {
-        $("body")
-                .on("copy", ".zclip", function(/* ClipboardEvent */ e) {
-                    e.clipboardData.clearData();
-                    e.clipboardData.setData("text/plain", $(this).data("zclip-text"));
-                    e.preventDefault();
-                });
-    });
-</script>
-<button class="zclip" data-zclip-text="Testing 1-2-3!">Click to copy!</button>
 </body>
 </html>

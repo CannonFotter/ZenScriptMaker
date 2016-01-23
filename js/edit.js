@@ -18,22 +18,24 @@ $(document).ready(function () {
 
     });
 
-    //$('#copy').click(function (){
-    //    $.event.special.copy.options.trustedDomains = ["*"];
-    //    $(this).zclip({
-    //        path: "./js/lib/jquery.zeroclipboard/dist/ZeroClipboard.swf",
-    //        copy: function(){
-    //            alert('');
-    //            return $('#output').val();
-    //        },
-    //        afterCopy:function(){/* 复制成功后的操作 */
-    //            //var $copysuc = $("<div class='copy-tips'><div class='copy-tips-wrap'>☺ 复制成功</div></div>");
-    //            //$("body").find(".copy-tips").remove().end().append($copysuc);
-    //            //$(".copy-tips").fadeOut(3000);
-    //        }
-    //    });
-    //});
-
+    $('button').click(function () {
+        //if (!$(this).data('purpose') == 'undefined') {
+        switch ($(this).data('purpose')) {
+            case 'copy':
+                break;
+            case 'save':
+                var fs = require('fs');
+                fs.writeFile('./output/' + new Date().getTime() + '.zs', $('#output').val(), function (err) {
+                    if (err) {
+                        alert('写入出错，' + err);
+                    } else {
+                        alert('写入成功');
+                    }
+                });
+                break;
+        }
+        // }
+    });
 });
 function readCSV(name) {
     var path = './data/' + name + '/itempanel.csv';
@@ -47,26 +49,9 @@ function readCSV(name) {
                 $('#item-list a').click(function () {
                     if ($('.btn-craft-group.active').length > 0) {
                         $('.btn-craft-group.active input').data('val', $(this).data('val'));
-                    } else {
-                        alert("请选择一个物品槽");
                     }
                 });
             }
         }, 0.2);
     });
 }
-
-//function copyToClipboard(obj) {
-//    $.event.special.copy.options.trustedDomains = ["*"];
-//    $("#copy").zclip({
-//        path: "ZeroClipboard.swf",
-//        copy: function () {
-//            return $(this).parent().find(".input").val();
-//        },
-//        afterCopy: function () {/* 复制成功后的操作 */
-//            var $copysuc = $("<div class='copy-tips'><div class='copy-tips-wrap'>☺ 复制成功</div></div>");
-//            $("body").find(".copy-tips").remove().end().append($copysuc);
-//            $(".copy-tips").fadeOut(3000);
-//        }
-//    });
-//}
