@@ -29,8 +29,6 @@
   "dependencies": {
     "jquery": "~2.2.0",
     "bootstrap": "~3.3.6",
-    "jquery-csv": "*",
-    "stickUp": "~0.5.7",
-    "jquery.zeroclipboard": "~0.2.2"
+    "jquery-csv": "*"
   }
 }
