@@ -132,10 +132,18 @@
                     </tr>
                     <tr>
                         <td>输出</td>
-                        <td colspan="3">
+                        <td>
                             <label class="btn btn-default btn-craft-group"><input type="radio" name="w"
                                                                                   data-slot="8" data-val="">#9
                             </label>
+                        </td>
+                        <td colspan="2">
+                            <form class="form-inline">
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="number-select" value="1">
+                                    <span class="input-group-addon">个</span>
+                                </div>
+                            </form>
                         </td>
                     </tr>
                     </tbody>
@@ -143,9 +151,11 @@
             </div>
             <div id="toolbar2">
                 <button class="btn btn-default" data-purpose="append">追加</button>
-                <button class="btn btn-default disabled" id="copy" data-purpose="copy">复制到剪贴板</button>
+                <button class="btn btn-default" id="copy" data-purpose="copy">复制到剪贴板</button>
                 <button class="btn btn-default" data-purpose="save">保存到.zs文件</button>
                 <!--<input type="file" id="file">-->
+                <input id="copyright" type="hidden"
+                       value="/*&#10;    Created by ZenScriptMaker<https://www.github.com/CannonFotter/ZenScriptMaker>&#10; */&#10;">
                 <textarea id="output" class="form-control" rows="3" placeholder="输出" readonly>Test</textarea>
             </div>
 
@@ -156,24 +166,83 @@
                 <thead>
                 <tr>
                     <!--名称-->
-                    <td id="nav-name"></td>
+                    <td id="nav-name" colspan="2"><h4>树叶</h4></td>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <!--图标-->
-                    <td id="nav-icon">
-                        <img src="./data/0-mc/itempanel_icons/Acacia Leaves.png" alt=""/>
+                    <td id="nav-icon" colspan="2">
+                        <img src="./data/0-mc/itempanel_icons/Acacia Leaves.png" alt="">
                     </td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td colspan="2">
+                        <div class="checkbox">
+                            <label>
+                                <input name="" type="checkbox" data-purpose=".anyDamage()"> 无视耐久
+                            </label>
+                            <!--<label>-->
+                            <!--<input name="" type="checkbox" data-purpose="absolute">绝对位置-->
+                            <!--</label>-->
+                            <label>
+                                <input name="" type="checkbox" data-purpose=".reuse()"> 重复使用
+                            </label>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <!--耐久相关-->
+                    <td colspan="2">
+                        <div class="checkbox">
+                            <label>
+                                <input name="" type="checkbox" data-purpose=".tranformDamage()"> 高级耐久选项
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input name="damage" type="radio" data-purpose=".onlyDamaged()"> 仅损坏
+                            </label>
+                            <label>
+                                <input name="damage" type="radio" data-purpose=".onlyDamageAtLeast({0});"> 不少于
+                            </label>
+                            <label>
+                                <input name="damage" type="radio" data-purpose=".onlyDamaged({0})"> 不多于
+                            </label>
+                            <label>
+                                <input name="damage" type="radio" data-purpose=".onlyDamaged({0}, {1})"> 在之间
+                            </label>
+
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>
+                        <div class="checkbox">
+                            <label>
+                                <input name="" type="checkbox"> NBT
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input name="nbt" type="radio" value="relative" data-purpose=".withTag({0})"> 相对
+                            </label>
+                            <label>
+                                <input name="nbt" type="radio" value="absolute" data-purpose=".onlyWithTag({0})"> 绝对
+                            </label>
+
+                            <textarea class="form-control" rows="3" placeholder="NBT..."></textarea>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="checkbox">
+                            <label>
+                                <input name="" type="checkbox" data-purpose=".transformReplace({0})"> 轮换物品
+                            </label>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td></td>
@@ -184,11 +253,8 @@
                 </tbody>
             </table>
         </div>
-
-
     </div>
 </div>
-
-
 <h1>-----------------编辑脚本</h1>
+<script src="./js/jquery.zeroclipboard.min.js"></script>
 <script src="./js/edit.js"></script>

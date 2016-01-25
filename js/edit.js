@@ -1,5 +1,6 @@
 var methods;
 $(document).ready(function () {
+    $.event.special.copy.options.trustedDomains = ["*"];
     $.getJSON('./data/mods.json', function (data) {
         methods = $.makeArray(data.methods);
         $.each(data.mod, function (k, v) {
@@ -18,14 +19,20 @@ $(document).ready(function () {
 
     });
 
+    $('#copy').on("copy", function(e) {
+        e.clipboardData.clearData();
+        e.clipboardData.setData("text/plain", $('#output').val());
+        e.preventDefault();
+    });
     $('button').click(function () {
         //if (!$(this).data('purpose') == 'undefined') {
         switch ($(this).data('purpose')) {
             case 'copy':
+                //$('#copy').trigger();
                 break;
             case 'save':
                 var fs = require('fs');
-                fs.writeFile('./output/' + new Date().getTime() + '.zs', $('#output').val(), function (err) {
+                fs.writeFile('./output/' + new Date().getTime() + '.zs', $('#copyright').val()+$('#output').val(), function (err) {
                     if (err) {
                         alert('写入出错，' + err);
                     } else {
@@ -55,3 +62,9 @@ function readCSV(name) {
         }, 0.2);
     });
 }
+function generate(template, input){
+
+}
+/*
+    Created by ZenScriptMaker<https://www.github.com/CannonFotter/ZenScriptMaker>
+ */

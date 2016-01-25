@@ -24,10 +24,18 @@ nav {
     width: auto;
 }
 
-input[type="radio"] {
+#editor input[type="radio"] {
     display: none;
 }
 
 #output {
     margin-top: 8px;
+}
+
+#number-select {
+    width: 80px;
+}
+
+label {
+    font-weight: normal;
 }
