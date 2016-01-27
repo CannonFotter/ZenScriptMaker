@@ -39,3 +39,7 @@ nav {
 label {
     font-weight: normal;
 }
+
+#number-bridge {
+    width: 80px;
+}

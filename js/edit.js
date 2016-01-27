@@ -43,6 +43,14 @@ $(document).ready(function () {
         }
         // }
     });
+    $('#nav-box input[type="radio"]').click(function (e) {
+        //alert(e.pageX+','+ e.pageY);
+    });
+    $(document).click(function (e) {
+        //alert(e.pageX+','+ e.pageY);
+        //wrong!!!
+        $('#number-bridge').css('top', e.screenX).css('left', e.screenY);
+    });
 });
 function readCSV(name) {
     var path = './data/' + name + '/itempanel.csv';
@@ -62,6 +70,7 @@ function readCSV(name) {
         }, 0.2);
     });
 }
+
 function generate(template, input){
 
 }
