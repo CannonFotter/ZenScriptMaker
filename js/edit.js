@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     });
 
-    $('#copy').on("copy", function(e) {
+    $('#copy').on("copy", function (e) {
         e.clipboardData.clearData();
         e.clipboardData.setData("text/plain", $('#output').val());
         e.preventDefault();
@@ -32,7 +32,7 @@ $(document).ready(function () {
                 break;
             case 'save':
                 var fs = require('fs');
-                fs.writeFile('./output/' + new Date().getTime() + '.zs', $('#copyright').val()+$('#output').val(), function (err) {
+                fs.writeFile('./output/' + new Date().getTime() + '.zs', $('#copyright').val() + $('#output').val(), function (err) {
                     if (err) {
                         alert('写入出错，' + err);
                     } else {
@@ -43,11 +43,24 @@ $(document).ready(function () {
         }
         // }
     });
-    $('#nav-box input[type="radio"]').click(function (e) {
-        $('#number-bridge').css({
-            top : e.pageY,
-            left : e.pageX
-        });
+    //$('#nav-box input[type="radio"]').click(function (e) {
+    //    $('#number-bridge').css({
+    //        top : e.pageY,
+    //        left : e.pageX
+    //    });
+    //});
+    $('#nav-box input').click(function (e) {
+        ($(e.target).attr('type') == 'checkbox') ? $($(e.target).data('target')).toggle() : null;
+        if ($(e.target).attr('type') == 'radio') {
+            if ($(e.target).attr('class') == 'oNumber') {
+                $('#dFirst').removeAttr('readonly');
+                $('#dSecond').attr('readonly', '');
+            } else if ($(e.target).attr('class') == 'tNumber') {
+                $('#dFirst, #dSecond').removeAttr('readonly');
+            } else {
+                $('#dFirst, #dSecond').attr('readonly', '');
+            }
+        }
     });
 });
 function readCSV(name) {
@@ -69,9 +82,9 @@ function readCSV(name) {
     });
 }
 
-function generate(template, input){
+function generate(template, input) {
 
 }
 /*
-    Created by ZenScriptMaker<https://www.github.com/CannonFotter/ZenScriptMaker>
+ Created by ZenScriptMaker<https://www.github.com/CannonFotter/ZenScriptMaker>
  */

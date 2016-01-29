@@ -32,14 +32,10 @@ nav {
     margin-top: 8px;
 }
 
-#number-select {
+#number-select, #number-bridge, #dFirst, #dSecond {
     width: 80px;
 }
 
 label {
     font-weight: normal;
-}
-
-#number-bridge {
-    width: 80px;
 }

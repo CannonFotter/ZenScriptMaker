@@ -162,97 +162,113 @@
         </div>
         <div class="col-md-4">
             <h4>Nav Box</h4>
-            <table id="nav-box" class="table table-hover">
-                <thead>
-                <tr>
-                    <!--名称-->
-                    <td id="nav-name" colspan="2"><h4>树叶</h4></td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <!--图标-->
-                    <td id="nav-icon" colspan="2">
-                        <img src="./data/0-mc/itempanel_icons/Acacia Leaves.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <div class="checkbox">
-                            <label>
-                                <input name="" type="checkbox" data-purpose=".anyDamage()"> 无视耐久
-                            </label>
-                            <!--<label>-->
-                            <!--<input name="" type="checkbox" data-purpose="absolute">绝对位置-->
-                            <!--</label>-->
-                            <label>
-                                <input name="" type="checkbox" data-purpose=".reuse()"> 重复使用
-                            </label>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <!--耐久相关-->
-                    <td colspan="2">
-                        <div class="checkbox">
-                            <label>
-                                <input name="" type="checkbox" data-purpose=".tranformDamage()"> 高级耐久选项
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input name="damage" type="radio" data-purpose=".onlyDamaged()"> 仅损坏
-                            </label>
-                            <label>
-                                <input name="damage" type="radio" data-purpose=".onlyDamageAtLeast({0});"> 不少于
-                            </label>
-                            <label>
-                                <input name="damage" type="radio" data-purpose=".onlyDamaged({0})"> 不多于
-                            </label>
-                            <label>
-                                <input name="damage" type="radio" data-purpose=".onlyDamaged({0}, {1})"> 在之间
-                            </label>
 
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="checkbox">
-                            <label>
-                                <input name="" type="checkbox"> NBT
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input name="nbt" type="radio" value="relative" data-purpose=".withTag({0})"> 相对
-                            </label>
-                            <label>
-                                <input name="nbt" type="radio" value="absolute" data-purpose=".onlyWithTag({0})"> 绝对
-                            </label>
+            <form>
+                <table id="nav-box" class="table table-hover">
+                    <thead>
+                    <tr>
+                        <!--名称-->
+                        <td id="nav-name" colspan="2"><h4>树叶</h4></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <!--图标-->
+                        <td id="nav-icon" colspan="2">
+                            <img src="./data/0-mc/itempanel_icons/Acacia Leaves.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="checkbox">
+                                <!--<label>-->
+                                <!--<input name="" type="checkbox" data-purpose="absolute">绝对位置-->
+                                <!--</label>-->
+                                <label>
+                                    <input name="" type="checkbox" data-purpose=".reuse()"> 保留物品
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--耐久相关-->
+                        <td colspan="2">
+                            <div class="checkbox">
+                                <label>
+                                    <input id="advanceD" type="checkbox" data-target="#damage"> 高级耐久选项
+                                </label>
+                            </div>
+                            <div id="damage" style="display: none;">
+                                <label>
+                                    <input class="oNumber" name="damage" type="radio" data-purpose="tranformDamage"
+                                           checked> 减少值
+                                </label>
+                                <label>
+                                    <input name="damage" type="radio" data-purpose="anyDamage"> 任意值
+                                </label>
+                                <label>
+                                    <input name="damage" type="radio" data-purpose="onlyDamaged"> 仅损坏
+                                </label>
+                                <label>
+                                    <input class="oNumber" name="damage" type="radio" data-purpose="onlyDamageAtLeast">
+                                    不少于
+                                </label>
+                                <label>
+                                    <input class="oNumber" name="damage" type="radio" data-purpose="onlyDamaged"> 不多于
+                                </label>
+                                <label>
+                                    <input class="tNumber" name="damage" type="radio" data-purpose="onlyDamaged"> 在之间
+                                </label>
 
-                            <textarea class="form-control" rows="3" placeholder="NBT..."></textarea>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="checkbox">
-                            <label>
-                                <input name="" type="checkbox" data-purpose=".transformReplace({0})"> 轮换物品
-                            </label>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                </tbody>
-            </table>
+                                <div class="form-inline">
+                                    参数1:
+                                    <input id="dFirst" type="number" class="form-control" value="1">
+                                    参数2:
+                                    <input id="dSecond" type="number" class="form-control" value="1" readonly>
+                                </div>
 
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input data-target="#nbt" type="checkbox"> NBT
+                                </label>
+                            </div>
+                            <div id="nbt" style="display: none;">
+                                <label>
+                                    <input name="nbt" type="radio" value="relative" data-purpose="withTag" checked> 相对
+                                </label>
+                                <label>
+                                    <input name="nbt" type="radio" value="absolute" data-purpose="onlyWithTag"> 绝对
+                                </label>
+
+                                <textarea class="form-control" rows="3" placeholder="NBT..."></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="" type="checkbox" data-purpose=".transformReplace({0})"> 轮换物品
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn btn-default">应用</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
         </div>
     </div>
 </div>
