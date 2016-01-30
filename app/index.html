@@ -140,7 +140,7 @@
                         <td colspan="2">
                             <form class="form-inline">
                                 <div class="input-group">
-                                    <input type="number" class="form-control" id="number-select" value="1">
+                                    <input type="number" class="form-control" id="number-select" value="1" min="1" max="64">
                                     <span class="input-group-addon">个</span>
                                 </div>
                             </form>
@@ -185,7 +185,7 @@
                                 <!--<input name="" type="checkbox" data-purpose="absolute">绝对位置-->
                                 <!--</label>-->
                                 <label>
-                                    <input name="" type="checkbox" data-purpose=".reuse()"> 保留物品
+                                    <input name="" type="checkbox" data-purpose="reuse"> 保留物品
                                 </label>
                             </div>
                         </td>
@@ -195,7 +195,7 @@
                         <td colspan="2">
                             <div class="checkbox">
                                 <label>
-                                    <input id="advanceD" type="checkbox" data-target="#damage"> 高级耐久选项
+                                    <input id="advanceD" type="checkbox" data-target="#damage" data-purpose="damage" name="a"> 高级耐久选项
                                 </label>
                             </div>
                             <div id="damage" style="display: none;">
@@ -207,6 +207,9 @@
                                     <input name="damage" type="radio" data-purpose="anyDamage"> 任意值
                                 </label>
                                 <label>
+                                    <input class="oNumber" name="damage" type="radio" data-purpose="withDamage"> 特定值
+                                </label>
+                                <label>
                                     <input name="damage" type="radio" data-purpose="onlyDamaged"> 仅损坏
                                 </label>
                                 <label>
@@ -214,17 +217,17 @@
                                     不少于
                                 </label>
                                 <label>
-                                    <input class="oNumber" name="damage" type="radio" data-purpose="onlyDamaged"> 不多于
+                                    <input class="oNumber" name="damage" type="radio" data-purpose="onlyDamageAtMost"> 不多于
                                 </label>
                                 <label>
-                                    <input class="tNumber" name="damage" type="radio" data-purpose="onlyDamaged"> 在之间
+                                    <input class="tNumber" name="damage" type="radio" data-purpose="onlyDamageBetween"> 在之间
                                 </label>
 
                                 <div class="form-inline">
                                     参数1:
-                                    <input id="dFirst" type="number" class="form-control" value="1">
+                                    <input id="dFirst" type="number" class="form-control" value="1" min="0">
                                     参数2:
-                                    <input id="dSecond" type="number" class="form-control" value="1" readonly>
+                                    <input id="dSecond" type="number" class="form-control" value="1" min="0" readonly>
                                 </div>
 
                             </div>
@@ -234,7 +237,7 @@
                         <td>
                             <div class="checkbox">
                                 <label>
-                                    <input data-target="#nbt" type="checkbox"> NBT
+                                    <input data-target="#nbt" type="checkbox" data-purpose="nbt" name="a"> NBT
                                 </label>
                             </div>
                             <div id="nbt" style="display: none;">
@@ -253,8 +256,11 @@
                         <td>
                             <div class="checkbox">
                                 <label>
-                                    <input name="" type="checkbox" data-purpose=".transformReplace({0})"> 轮换物品
+                                    <input data-target="#transItem" type="checkbox" data-purpose="transformReplace" name="a"> 轮换物品
                                 </label>
+                            </div>
+                            <div id="transItem" style="display: none;">
+                                <textarea class="form-control" rows="2" placeholder="物品文字ID，以'<>'包裹"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -263,7 +269,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <button class="btn btn-default">应用</button>
+                            <button id="submit" class="btn btn-default">应用</button>
                         </td>
                     </tr>
                     </tbody>
@@ -272,6 +278,5 @@
         </div>
     </div>
 </div>
-<h1>-----------------编辑脚本</h1>
 <script src="./js/jquery.zeroclipboard.min.js"></script>
 <script src="./js/edit.js"></script>

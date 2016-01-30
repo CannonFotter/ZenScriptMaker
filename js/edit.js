@@ -43,12 +43,6 @@ $(document).ready(function () {
         }
         // }
     });
-    //$('#nav-box input[type="radio"]').click(function (e) {
-    //    $('#number-bridge').css({
-    //        top : e.pageY,
-    //        left : e.pageX
-    //    });
-    //});
     $('#nav-box input').click(function (e) {
         ($(e.target).attr('type') == 'checkbox') ? $($(e.target).data('target')).toggle() : null;
         if ($(e.target).attr('type') == 'radio') {
@@ -60,6 +54,47 @@ $(document).ready(function () {
             } else {
                 $('#dFirst, #dSecond').attr('readonly', '');
             }
+        }
+    });
+    $('#submit').click(function () {
+        var json;
+        //先判断下改的是哪个槽
+        var slot = $('input[name="w"]:checked');
+        //再看看都选择改什么了
+        var a = $('#nav-box input[name="a"]:checked');
+        var arr = [];
+        //先循环获取所有purpose到一个数组，然后indexOf(...)
+        for(var i =0;i < a.length;i++){
+            arr[i] = $(a[i]).data('purpose')
+        }
+        if (arr.indexOf('damage')) {
+            //
+            //先获得选中的
+            switch($('input[name="damage"]:checked').data('purpose')){
+                case 'transformDamage' :
+                case 'withDamage' :
+                case 'onlyDamageAtLeast' :
+                case 'onlyDamageAtMost' :
+                    //此处需要参数1的值来做参数
+                    var temp = $('#dFirst').val();
+                    //给选中的槽的data-plus赋值(先存到缓存里)
+
+                    break;
+                case 'anyDamage' :
+                case 'onlyDamaged' :
+                    //此处不需要参数
+                    break;
+                case 'onlyDamageBetween' :
+                    //此处需要参数1和参数2
+                    var temp1 = $('#dFirst').val();
+                    var temp2 = $('#dSecond').val();
+                    break;
+            }
+            //再看看参数
+        }else if(arr.indexOf('nbt')){
+            //
+        }else if(arr.indexOf('transformReplace')){
+            //
         }
     });
 });
@@ -83,7 +118,7 @@ function readCSV(name) {
 }
 
 function generate(template, input) {
-
+//等等从php核心实现里拿出来
 }
 /*
  Created by ZenScriptMaker<https://www.github.com/CannonFotter/ZenScriptMaker>
