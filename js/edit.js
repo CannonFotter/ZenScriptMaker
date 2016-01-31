@@ -24,7 +24,7 @@ $(document).ready(function () {
         e.clipboardData.setData("text/plain", $('#output').val());
         e.preventDefault();
     });
-    $('button').click(function () {
+    $('#toolbar2 button').click(function () {
         //if (!$(this).data('purpose') == 'undefined') {
         switch ($(this).data('purpose')) {
             case 'copy':
@@ -45,6 +45,8 @@ $(document).ready(function () {
     });
     $('#nav-box input').click(function (e) {
         ($(e.target).attr('type') == 'checkbox') ? $($(e.target).data('target')).toggle() : null;
+    });
+    $('#nav-box input[name="damage"]').click(function (e) {
         if ($(e.target).attr('type') == 'radio') {
             if ($(e.target).attr('class') == 'oNumber') {
                 $('#dFirst').removeAttr('readonly');
@@ -57,7 +59,7 @@ $(document).ready(function () {
         }
     });
     $('#submit').click(function () {
-        var json;
+        var json = {};
         //先判断下改的是哪个槽
         var slot = $('input[name="w"]:checked');
         //再看看都选择改什么了
@@ -67,35 +69,46 @@ $(document).ready(function () {
         for(var i =0;i < a.length;i++){
             arr[i] = $(a[i]).data('purpose')
         }
-        if (arr.indexOf('damage')) {
+        console.log(arr);
+        if (arr.indexOf('damage') != -1) {
             //
             //先获得选中的
-            switch($('input[name="damage"]:checked').data('purpose')){
+            var dchecked = $('input[name="damage"]:checked').data('purpose');
+            switch(dchecked){
                 case 'transformDamage' :
                 case 'withDamage' :
                 case 'onlyDamageAtLeast' :
                 case 'onlyDamageAtMost' :
                     //此处需要参数1的值来做参数
-                    var temp = $('#dFirst').val();
                     //给选中的槽的data-plus赋值(先存到缓存里)
-
+                    json[dchecked] = $('#dFirst').val();
                     break;
                 case 'anyDamage' :
                 case 'onlyDamaged' :
                     //此处不需要参数
+                    json[dchecked]='';
                     break;
                 case 'onlyDamageBetween' :
                     //此处需要参数1和参数2
-                    var temp1 = $('#dFirst').val();
-                    var temp2 = $('#dSecond').val();
+                    json[dchecked] = $('#dFirst').val()+', '+$('#dSecond').val();
                     break;
             }
             //再看看参数
-        }else if(arr.indexOf('nbt')){
-            //
-        }else if(arr.indexOf('transformReplace')){
-            //
         }
+        if(arr.indexOf('nbt') != -1){
+            var nbt = $('#nbt-input').val();
+            if(nbt){
+                json[$('#nav-box input[name="nbt"]:checked').data('purpose')] = nbt;
+            }
+        }
+        if(arr.indexOf('transformReplace') != -1){
+            var transReplace = $('#transR-input').val();
+            if(nbt){
+                json['transformReplace'] = transReplace;
+            }
+        }
+        console.log(json);
+        //明日继续
     });
 });
 function readCSV(name) {

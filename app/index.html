@@ -200,7 +200,7 @@
                             </div>
                             <div id="damage" style="display: none;">
                                 <label>
-                                    <input class="oNumber" name="damage" type="radio" data-purpose="tranformDamage"
+                                    <input class="oNumber" name="damage" type="radio" data-purpose="transformDamage"
                                            checked> 减少值
                                 </label>
                                 <label>
@@ -248,7 +248,7 @@
                                     <input name="nbt" type="radio" value="absolute" data-purpose="onlyWithTag"> 绝对
                                 </label>
 
-                                <textarea class="form-control" rows="3" placeholder="NBT..."></textarea>
+                                <textarea id="nbt-input" class="form-control" rows="3" placeholder="NBT..."></textarea>
                             </div>
                         </td>
                     </tr>
@@ -260,7 +260,7 @@
                                 </label>
                             </div>
                             <div id="transItem" style="display: none;">
-                                <textarea class="form-control" rows="2" placeholder="物品文字ID，以'<>'包裹"></textarea>
+                                <textarea id="transR-input" class="form-control" rows="2" placeholder="物品文字ID，以'<>'包裹"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -269,7 +269,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <button id="submit" class="btn btn-default">应用</button>
+                            <button type="button" id="submit" class="btn btn-default">应用</button>
                         </td>
                     </tr>
                     </tbody>
