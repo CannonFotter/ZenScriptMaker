@@ -1,7 +1,31 @@
 {
-  "name": "mtrecipesmaker",
+  "name": "zenscriptmaker",
+  "version": "0.0.1",
+  "description": "A app based on NW.js. In order to use minetweaker easily.",
   "main": "index.html",
+  "dependencies": {
+    "log4js": "^0.6.31",
+    "nw": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CannonFotter/ZenScriptMaker.git"
+  },
+  "keywords": [
+    "minetweaker"
+  ],
+  "author": "Cannon_fotter",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CannonFotter/ZenScriptMaker/issues"
+  },
+  "homepage": "https://github.com/CannonFotter/ZenScriptMaker#readme",
   "window": {
-    "toolbar": true
+    "toolbar": true,
+    "icon": "./icon.png"
   }
 }
