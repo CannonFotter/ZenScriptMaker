@@ -1,1 +1,31 @@
-<h1>个人设置</h1>
+<!--<h1>个人设置</h1>-->
+<div class="container">
+  <h4>设置</h4>
+  <form class="form-inline">
+    <table class="table">
+      <tr>
+        <!--每2个<td />为一组-->
+        <td>运行模式</td>
+        <td>
+          <label class="radio-inline">
+            <input type="radio" name="runMode" value="file"> 本地文件传输协议
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="runMode" value="http"> 超文本传输协议
+          </label>&nbsp;
+          <label>
+            端口号：
+            <input id="port" type="number" class="form-control input-sm" value="12450" readonly>
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+
+  </form>
+</div>
+

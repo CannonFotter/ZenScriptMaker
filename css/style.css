@@ -1,41 +1,44 @@
 p, a, h1, h2, h3, h4, dl, dd, dt, div {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif !important;
-    font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif !important;
+  font-weight: normal;
 }
 
 body {
-    margin: 10px;
+  margin: 10px;
 }
 
 nav {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
+span{
+  font-weight: bold;
+}
 #mod-select {
-    margin-left: 8px;
-    width: 160px;
+  margin-left: 8px;
+  width: 160px;
 }
 
 #item-list {
-    margin-top: 8px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 500px;
-    width: auto;
+  margin-top: 8px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 500px;
+  width: auto;
 }
 
 #editor input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 #output {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
-#number-select, #number-bridge, #dFirst, #dSecond {
-    width: 80px;
+#number-select, #number-bridge, #dFirst, #dSecond, #port {
+  width: 80px;
 }
 
 label {
-    font-weight: normal;
+  font-weight: normal;
 }
