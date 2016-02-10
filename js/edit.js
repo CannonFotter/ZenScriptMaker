@@ -19,15 +19,15 @@ $(document).ready(function () {
         var slot = $('input[name=i]:checked');
         if (slot.data('adv')) {
           //如果之前有，先把数据转换成json对象
-          var json = $.parseJSON(slot.data('adv'));
-          var reuseDOM = $('#reuse');
-          var dN1DOM = $('#dFirst');
-          var dN2DOM = $('#dSecond');
-          var damageDOM = $('#advanceD');
-          var nbtDOM = $('#nbt-s');
-          var nbt_iDOM = $('#nbt-input');
-          //var trDOM = $('#transReplace');
-          var tr_iDOM = $('#transR-input');
+          var json = $.parseJSON(slot.data('adv')),
+            //reuseDOM = $('#reuse'),
+            dN1DOM = $('#dFirst'),
+            dN2DOM = $('#dSecond'),
+            damageDOM = $('#advanceD'),
+            nbtDOM = $('#nbt-s'),
+            nbt_iDOM = $('#nbt-input'),
+          //trDOM = $('#transReplace'),
+            tr_iDOM = $('#transR-input');
           console.log(json);
           //暴力对照
           $.each(json, function (k, v) {
@@ -89,10 +89,6 @@ function readCSV(name) {
         }
       }, 0.2);
     });
-}
-
-function generate(template, input) {
-  //等等从php核心实现里拿出来
 }
 
 //绑定事件

@@ -1,7 +1,16 @@
-function getRealCraft(input) {
+var zm = function () {
+};
+zm.prototype.format = function (str, params) {
+  var reg = /{(\d+)}/gm;
+  return str.replace(reg, function (match, name) {
+    return params[~~name];
+  });
+};
+zm.prototype.getRealCraft = function (input) {
   /* 原理说明：
    * 先确定合成表的实际大小，然后重新转换成定长数组
    */
+  console.log(input);
   //横向距离
   var hStart = 0,
     hEnd = 0,
@@ -9,7 +18,7 @@ function getRealCraft(input) {
     h = 0;
   for (var i = 0; i < input.length; i++) {
     for (var j = 0; j < input[i].length; j++) {
-      if (input[i][j] != '') {
+      if (input[i][j] != 'null') {
         //如果开始位置或许比真正第一个不是空的位置小，要修正并锁定
         if (isFirstValidSlot != 0 && j < hStart) {
           hStart = j;
@@ -19,9 +28,7 @@ function getRealCraft(input) {
 
         //如果默认的结束位置，比现在的位置大，那么应该修正结束位置
         //首尾算法不一样的原因，是因为循环顺序，离首位越来越远，离末尾越来越近
-        if (hEnd < j) {
-          hEnd = j;
-        }
+        hEnd = (hEnd < j) ? j : hEnd;
       }
       h = (h < hEnd - hStart) ? hEnd - hStart : h;
     }
@@ -43,63 +50,77 @@ function getRealCraft(input) {
 
         //如果默认的结束位置，比现在的位置大，那么应该修正结束位置
         //首尾算法不一样的原因，是因为循环顺序，离首位越来越远，离末尾越来越近
-        if (vEnd < j) {
-          vEnd = j;
-        }
+        vEnd = (vEnd < j) ? j : vEnd;
       }
       v = (v < vEnd - vStart) ? vEnd - vStart : v;
     }
     isFirstValidSlot = 1;
   }
-  //console.log('h:' + h + ';v:' + v);
-  //console.log('hStart:' + hStart);
-  //console.log('vStart:' + vStart);
   var arr = [];
   for (i = 0; i <= v; i++) {
     arr[i] = [];
     for (j = 0; j <= h; j++) {
       //vStart,hStart可以理解为纵横偏离值
-      //console.log('i:' + i + ' , j:' + j);
       arr[i][j] = input[i + vStart][j + hStart];
-      //arr[i].push([]);
     }
   }
-  //console.log(arr);
   return arr;
-  //然后就要重新组合，送给generate()生成脚本了
-}
+};
 //把基础参数和高级参数组合到一起
-function preBuild() {
-  var slots = $('input[name=i]'),
-    result = [];
-  $.each(slots, function (k, v) {
-    var base = $(v).data('val'),
-      adv = $(v).data('adv'),
-      fix = '';
-    if (adv != '') {
-      $.each($.parseJSON(adv), function (p, q) {
-        if (typeof(q) == 'string') {
-          fix += '.' + p + '(' + q + ')';
-        } else {
-          //专门为多参数准备的
-          var temp = '';
-          $.each(q, function (k, v) {
-            temp += v + ', ';
-          });
-          temp = temp.substring(0, temp.length - 2);
-          fix += '.' + p + '(' + temp + ')';
-        }
-      });
-    }
-    result[k] = base+fix;
-  });
-  console.log(result);
-  return result;
-}
-//按行组合输入数据
-function generate(template, input, opt) {
+zm.prototype.mix = function (inputObj) {
+  console.log(inputObj);
+  var base = $(inputObj).data('val'),
+    adv = $(inputObj).data('adv'),
+    fix = '';
+  console.log($(inputObj).data('adv'));
+  if (adv != '') {
+    $.each($.parseJSON(adv), function (p, q) {
+      if (typeof(q) == 'string') {
+        fix += '.' + p + '(' + q + ')';
+      } else {
+        //专门为多参数准备的
+        var temp = '';
+        $.each(q, function (m, n) {
+          temp += n + ', ';
+        });
+        temp = temp.substring(0, temp.length - 2);
+        fix += '.' + p + '(' + temp + ')';
+      }
+    });
+  }
+  return base + fix;
+};
 
-}
+
+zm.prototype.preBuild = function (opt) {
+  //如果是true，说明是相对位置
+  var slots = $('input[name=i]'),
+    result = [],
+    _this = this;
+  $.each(slots, function (k, v) {
+    var row = $(v).data('row'),
+      num = $(v).data('num');
+    //重建二维数组
+    //傻逼js,php大法好
+    result[row] = (result[row]) ? result[row] : [];
+    result[row][num] = _this.mix(v);
+  });
+  var temp = [];
+  result = (opt) ? _this.getRealCraft(result) : result;
+  $.each(result, function (k, v) {
+    //按行构建
+    temp[k] = '[' + v.join(', ') + ']';
+  });
+  result = '[' + temp.join(', ') + ']';
+  return result;
+};
+//按行组合输入数据
+zm.prototype.generate = function (template, opt) {
+  //console.log(this); zm
+  return this.format(template, $('input[name=o]').data('val') + ' * ' + $('#number-select').val(), this.preBuild(opt));
+};
+
+//测试用
 var a = [
   ['minecraft:stone', 'minecraft:stone', 'minecraft:stone'],
   ['null', 'minecraft:stone', 'null'],

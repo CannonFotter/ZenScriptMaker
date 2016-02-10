@@ -6,7 +6,7 @@
     "3-ImmersiveEngineering": "Immersive Engineering"
   },
   "methods": {
-    "0_0": "recipes.addShaped(<{$out}>*{$count},[$in]);",
-    "0_1": "recipes.removeShaped(<{$out}>*{$count},[$in]);"
+    "addShaped": "recipes.addShaped({0}, {1});",
+    "removeShaped": "recipes.removeShaped({0}, {1});"
   }
 }
