@@ -1,7 +1,6 @@
-var methods;
 $(document).ready(function () {
   //初始化
-  $.event.special.copy.options.trustedDomains = ["*"];
+  //$.event.special.copy.options.trustedDomains = ["*"];
   $('#nav-box').load('./app/nav-box.html', function () {
     bind()
   });

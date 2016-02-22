@@ -10,7 +10,7 @@ zm.prototype.getRealCraft = function (input) {
   /* 原理说明：
    * 先确定合成表的实际大小，然后重新转换成定长数组
    */
-  console.log(input);
+  //console.log(input);
   //横向距离
   var hStart = 0,
     hEnd = 0,
@@ -66,6 +66,17 @@ zm.prototype.getRealCraft = function (input) {
   }
   return arr;
 };
+zm.prototype.getTemplate = function () {
+  var templates = [];
+  templates['addShaped'] = 'recipes.addShaped({0}, {1});';
+  templates['addShapeless'] = 'recipes.addShapeless({0}, {1});';
+  templates['removeShaped'] = 'recipes.removeShaped({0}, {1});';
+  templates['removeShapeless'] = 'recipes.removeShapeless({0}, {1});';
+  //templates['remove'] = 'recipes.remove({})';
+  var a = $('input[name=r1]').val() + $('input[name=r0]').val();
+  return templates[a];
+
+};
 //把基础参数和高级参数组合到一起
 zm.prototype.mix = function (inputObj) {
   console.log(inputObj);
@@ -117,7 +128,7 @@ zm.prototype.preBuild = function (opt) {
 //按行组合输入数据
 zm.prototype.generate = function (template, opt) {
   //console.log(this); zm
-  return this.format(template, $('input[name=o]').data('val') + ' * ' + $('#number-select').val(), this.preBuild(opt));
+  return this.format(this.getTemplate(), [$('input[name=o]').data('val') + ' * ' + $('#number-select').val(), this.preBuild(opt)]);
 };
 
 //测试用
