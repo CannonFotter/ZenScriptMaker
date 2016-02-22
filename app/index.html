@@ -1,40 +1,15 @@
-<div class="btn-toolbar" id="toolbar">
-  <div class="btn-group" data-toggle="buttons">
-    <label class="btn btn-default active"><input type="radio" name="r0"
-                                                 data-target="0">有序
-    </label>
-    <label class="btn btn-default"><input type="radio" name="r0" class="btn-sm"
-                                          data-target="1">无序
-    </label>
-  </div>
-  <div class="btn-group" data-toggle="buttons">
-    <label class="btn btn-default active">
-      <input type="radio" name="r1" data-target="0">
-
-      <div>+</div>
-    </label>
-    <label class="btn btn-default">
-      <input type="radio" name="r1" data-target="1">
-
-      <div>-</div>
-    </label>
-
-  </div>
-  <form class="form-inline">
-    <div class="form-group">
-      <select id="mod-select" class="form-control">
-        <!--<option value="0-mc">Minecraft</option>-->
-      </select>
-      <input type="text" class="form-control" placeholder="搜索">
-    </div>
-  </form>
-
-</div>
 <div class="container-fluid item-list">
   <div class="row">
     <div class="col-md-4">
       <h4>item数据</h4>
-
+      <form class="form-inline">
+        <div class="form-group">
+          <select id="mod-select" class="form-control input-sm">
+            <!--<option value="0-mc">Minecraft</option>-->
+          </select>
+          <input type="text" class="form-control input-sm" placeholder="搜索">
+        </div>
+      </form>
       <div id="item-list">
         <table class="table table-striped table-hover">
           <thead id="">
@@ -42,127 +17,30 @@
             <th>#</th>
             <th>附加值</th>
             <th>名称</th>
-            <!--<th>文字ID</th>-->
             <th>追加</th>
           </tr>
           </thead>
-          <tbody>
-          <!--<tr>-->
-          <!--<td>1</td>-->
-          <!--<td>1</td>-->
-          <!--<td>1</td>-->
-          <!--<td>1</td>-->
-          <!--<td>1</td>-->
-          <!--</tr>-->
-          </tbody>
+          <tbody></tbody>
         </table>
       </div>
     </div>
     <div class="col-md-4">
       <h4>合成编辑区</h4>
-
-      <div data-toggle="buttons">
-        <table class="table" id="editor">
-          <thead>
-          <tr>
-            <th>#</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td>
-              1
-            </td>
-            <td>
-              <label class="btn btn-default btn-craft-group active"><input type="radio" name="i"
-                                                                           data-num="0" data-val="null" data-adv=""
-                                                                           data-row="0" data-checked>#0
-              </label>
-            </td>
-            <td>
-              <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
-                                                                    data-num="1" data-val="null" data-row="0" data-adv="">#1
-              </label>
-            </td>
-            <td>
-              <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
-                                                                    data-num="2" data-val="null" data-row="0" data-adv="">#2
-              </label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              2
-            </td>
-            <td>
-              <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
-                                                                    data-num="0" data-val="null" data-row="1" data-adv="">#3
-              </label>
-            </td>
-            <td>
-              <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
-                                                                    data-num="1" data-val="null" data-row="1" data-adv="">#4
-              </label>
-            </td>
-            <td>
-              <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
-                                                                    data-num="2" data-val="null" data-row="1" data-adv="">#5
-              </label>
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>
-              <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
-                                                                    data-num="0" data-val="null" data-row="2" data-adv="">#6
-              </label>
-            </td>
-            <td>
-              <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
-                                                                    data-num="1" data-val="null" data-row="2" data-adv="">#7
-              </label>
-            </td>
-            <td>
-              <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
-                                                                    data-num="2" data-val="null" data-row="2" data-adv="">#8
-              </label>
-            </td>
-          </tr>
-          <tr>
-            <td>输出</td>
-            <td>
-              <label class="btn btn-default btn-craft-group"><input type="radio" name="o"
-                                                                    data-val="null" data-adv="">#9
-              </label>
-            </td>
-            <td colspan="2">
-              <form class="form-inline">
-                <div class="input-group">
-                  <input type="number" class="form-control" id="number-select" value="1" min="1" max="64">
-                  <span class="input-group-addon">个</span>
-                </div>
-              </form>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
+      <div id="main-edit"></div>
       <div id="toolbar2">
         <button class="btn btn-default" data-purpose="append">追加</button>
         <button class="btn btn-default" id="copy" data-purpose="copy">复制到剪贴板</button>
         <button class="btn btn-default" data-purpose="save">保存到.zs文件</button>
-        <!--<input type="file" id="file">-->
         <input id="copyright" type="hidden"
                value="/*&#10;    Created by ZenScriptMaker<https://www.github.com/CannonFotter/ZenScriptMaker>&#10; */&#10;">
-        <textarea id="output" class="form-control" rows="3" placeholder="输出" readonly>Test</textarea>
+        <textarea id="output" class="form-control" rows="3" placeholder="输出" readonly></textarea>
       </div>
-
     </div>
     <div class="col-md-4" id="nav-box"></div>
   </div>
+  <div class="row">
+
+  </div>
 </div>
 <script src="./js/jquery.zeroclipboard.min.js"></script>
-<script src="./js/edit.js"></script>
+

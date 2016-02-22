@@ -1,0 +1,128 @@
+<div class="btn-toolbar" id="toolbar">
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-default active">
+      <input type="radio" name="r1" value="add" checked>添加
+    </label>
+    <label class="btn btn-default">
+      <input type="radio" name="r1" value="remove">删除
+    </label>
+
+  </div>
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-default active"><input type="radio" name="r0"
+                                                 value="Shaped" checked>有序
+    </label>
+    <label class="btn btn-default"><input type="radio" name="r0" class="btn-sm"
+                                          value="Shapeless">无序
+    </label>
+    <!--<label class="btn btn-default"><input type="radio" name="r0" class="btn-sm"-->
+    <!--value="">所有(仅移除)-->
+    <!--</label>-->
+  </div>
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-default active"><input type="radio" name="r2"
+                                                 value="1" checked>相对
+    </label>
+    <label class="btn btn-default"><input type="radio" name="r2" class="btn-sm"
+                                          value="0">绝对
+    </label>
+  </div>
+</div>
+<div data-toggle="buttons">
+  <table class="table" id="editor">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>
+        1
+      </td>
+      <td>
+        <label class="btn btn-default btn-craft-group active"><input type="radio" name="i"
+                                                                     data-num="0" data-val="null" data-adv=""
+                                                                     data-row="0" data-checked>#0
+        </label>
+      </td>
+      <td>
+        <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
+                                                              data-num="1" data-val="null" data-row="0"
+                                                              data-adv="">#1
+        </label>
+      </td>
+      <td>
+        <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
+                                                              data-num="2" data-val="null" data-row="0"
+                                                              data-adv="">#2
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        2
+      </td>
+      <td>
+        <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
+                                                              data-num="0" data-val="null" data-row="1"
+                                                              data-adv="">#3
+        </label>
+      </td>
+      <td>
+        <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
+                                                              data-num="1" data-val="null" data-row="1"
+                                                              data-adv="">#4
+        </label>
+      </td>
+      <td>
+        <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
+                                                              data-num="2" data-val="null" data-row="1"
+                                                              data-adv="">#5
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
+                                                              data-num="0" data-val="null" data-row="2"
+                                                              data-adv="">#6
+        </label>
+      </td>
+      <td>
+        <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
+                                                              data-num="1" data-val="null" data-row="2"
+                                                              data-adv="">#7
+        </label>
+      </td>
+      <td>
+        <label class="btn btn-default btn-craft-group"><input type="radio" name="i"
+                                                              data-num="2" data-val="null" data-row="2"
+                                                              data-adv="">#8
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>输出</td>
+      <td>
+        <label class="btn btn-default btn-craft-group"><input type="radio" name="o"
+                                                              data-val="null" data-adv="">#9
+        </label>
+      </td>
+      <td colspan="2">
+        <form class="form-inline">
+          <div class="input-group">
+            <input type="number" class="form-control" id="number-select" value="1" min="1" max="64">
+            <span class="input-group-addon">个</span>
+          </div>
+        </form>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<script src="./js/craftingTable.js"></script>

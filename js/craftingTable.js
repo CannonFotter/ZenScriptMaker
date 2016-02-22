@@ -1,8 +1,8 @@
 $(document).ready(function () {
   //初始化
-  //$.event.special.copy.options.trustedDomains = ["*"];
+  $.event.special.copy.options.trustedDomains = ["*"];
   $('#nav-box').load('./app/nav-box.html', function () {
-    bind()
+    bind();
   });
 
   //改变选中的槽
@@ -16,10 +16,13 @@ $(document).ready(function () {
         bind();
         //先看看选了什么
         var slot = $('input[name=i]:checked');
+        if (slot.data('val')) {
+          changeicon();
+        }
         if (slot.data('adv')) {
           //如果之前有，先把数据转换成json对象
           var json = $.parseJSON(slot.data('adv')),
-            //reuseDOM = $('#reuse'),
+          //reuseDOM = $('#reuse'),
             dN1DOM = $('#dFirst'),
             dN2DOM = $('#dSecond'),
             damageDOM = $('#advanceD'),
@@ -75,6 +78,7 @@ function readCSV(name) {
   $.get(path,
     function (result) {
       var r = $.csv.toArrays(result);
+      $('#item-list table').append('<tr><td>0</td> <td>0</td> <td>清空</td><td><a href="#" data-val="null">追加</a></td></tr>');
       setTimeout(function () {
         for (var i = 1; i < r.length; i++) {
           $('#item-list table').append("<tr><td>" + r[i][1] + "</td><td>" + r[i][2] + "</td><td>" + r[i][4] + "</td><td><a href=\"#\" data-val=\"<" + r[i][0] + ":" + r[i][2] + ">\">追加</a></td></tr>");
@@ -113,78 +117,78 @@ function bind() {
 
   //nav-box点击应用的事件
   $('#submit').click(function () {
-    console.log(new Date().getTime());
-    var json = {};
     //先判断下改的是哪个槽
     var slot = $('input[name=i]:checked');
-
-    //再看看都选择改什么了
-    var a = $('input[name="a"]:checked');
-    var arr = [];
-    //先循环获取所有purpose到一个数组，然后indexOf(...)
-    for (var i = 0; i < a.length; i++) {
-      arr[i] = $(a[i]).data('purpose');
-    }
-    //console.log(arr);
-    if (arr.indexOf('damage') != -1) {
-      //
-      //先获得选中的
-      var dchecked = $('input[name="damage"]:checked').data('purpose');
-      //判断数值是否合法
-      var s1 = $('#dFirst').val();
-      var s2 = $('#dSecond').val();
-      if (!/^\d+$/.test(s1) || !/^\d+$/.test(s2) || s1 < 0 || s2 < 0) {
-        alert('参数必须是非负整数');
-        return false;
+    if (slot.data('val') != 'null') {
+      //console.log(new Date().getTime());
+      var json = {};
+      //再看看都选择改什么了
+      var a = $('input[name="a"]:checked');
+      var arr = [];
+      //先循环获取所有purpose到一个数组，然后indexOf(...)
+      for (var i = 0; i < a.length; i++) {
+        arr[i] = $(a[i]).data('purpose');
       }
-      switch (dchecked) {
-        case 'transformDamage':
-        case 'withDamage':
-        case 'onlyDamageAtLeast':
-        case 'onlyDamageAtMost':
-          //此处需要参数1的值来做参数
-          //给选中的槽的data-adv赋值(先存到缓存里)
-          json[dchecked] = s1;
-          break;
-        case 'anyDamage':
-        case 'onlyDamaged':
-          //此处不需要参数
-          json[dchecked] = '';
-          break;
-        case 'onlyDamageBetween':
-          //此处需要参数1和参数2
-          if (s1 > s2) {
-            alert('参数1必须小于参数2');
-            return false;
-          }
-          json[dchecked] = {0: s1, 1: s2};
-          break;
+      //console.log(arr);
+      if (arr.indexOf('damage') != -1) {
+        //
+        //先获得选中的
+        var dchecked = $('input[name="damage"]:checked').data('purpose');
+        //判断数值是否合法
+        var s1 = $('#dFirst').val();
+        var s2 = $('#dSecond').val();
+        if (!/^\d+$/.test(s1) || !/^\d+$/.test(s2) || s1 < 0 || s2 < 0) {
+          alert('参数必须是非负整数');
+          return false;
+        }
+        switch (dchecked) {
+          case 'transformDamage':
+          case 'withDamage':
+          case 'onlyDamageAtLeast':
+          case 'onlyDamageAtMost':
+            //此处需要参数1的值来做参数
+            //给选中的槽的data-adv赋值(先存到缓存里)
+            json[dchecked] = s1;
+            break;
+          case 'anyDamage':
+          case 'onlyDamaged':
+            //此处不需要参数
+            json[dchecked] = '';
+            break;
+          case 'onlyDamageBetween':
+            //此处需要参数1和参数2
+            if (s1 > s2) {
+              alert('参数1必须小于参数2');
+              return false;
+            }
+            json[dchecked] = {0: s1, 1: s2};
+            break;
+        }
+        //再看看参数
       }
-      //再看看参数
-    }
-    if (arr.indexOf('nbt') != -1) {
-      var nbt = $('#nbt-input').val();
-      if (nbt) {
-        json[$('input[name="nbt"]:checked').data('purpose')] = nbt;
+      if (arr.indexOf('nbt') != -1) {
+        var nbt = $('#nbt-input').val();
+        if (nbt) {
+          json[$('input[name="nbt"]:checked').data('purpose')] = nbt;
+        }
       }
-    }
-    if (arr.indexOf('transformReplace') != -1) {
-      var transReplace = $('#transR-input').val();
-      if (transReplace) {
-        json['transformReplace'] = transReplace;
+      if (arr.indexOf('transformReplace') != -1) {
+        var transReplace = $('#transR-input').val();
+        if (transReplace) {
+          json['transformReplace'] = transReplace;
+        }
       }
+      if (arr.indexOf('reuse') != -1) {
+        json['reuse'] = '';
+      }
+      slot.data('adv', JSON.stringify(json));
     }
-    if (arr.indexOf('reuse') != -1) {
-      json['reuse'] = '';
-    }
-    slot.data('adv', JSON.stringify(json));
   });
 }
 
 $.getJSON('./data/mods.json',
   function (data) {
-    methods = $.makeArray(data.methods);
-    $.each(data.mod,
+    $.each(data,
       function (k, v) {
         $('#mod-select').append('<option value="' + k + '">' + v + '</option>');
       });
@@ -208,14 +212,15 @@ $('#copy').on("copy",
 
 //主要按钮点击事件
 $('#toolbar2 button').click(function () {
-  if (!$(this).data('purpose')) {
+  if ($(this).data('purpose') != '') {
     switch ($(this).data('purpose')) {
       case 'copy':
         //$('#copy').trigger();
         break;
       case 'save':
         var fs = require('fs');
-        fs.writeFile('./output/' + new Date().getTime() + '.zs', $('#copyright').val() + $('#output').val(),
+        var filename = prompt("请选择保存的文件名","请输入文件名(不含扩展名)");
+        fs.writeFile('./output/' + filename + '.zs', $('#copyright').val() + $('#output').val(),
           function (err) {
             if (err) {
               alert('写入出错，' + err);
@@ -224,9 +229,25 @@ $('#toolbar2 button').click(function () {
             }
           });
         break;
+      case 'append':
+        //console.log($('#output'));
+        var craftTable = require('./js/zm.craftingtable');
+        craftTable.init(jQuery);
+        var str = $('#output').val();
+        if (str) {
+          $('#output').val(str+"\r\n"+craftTable.generate($('input[name=r2]:checked').val()));
+        }else{
+          $('#output').val(craftTable.generate($('input[name=r2]:checked').val()));
+        }
+            break;
     }
   }
+
 });
+
+function changeicon() {
+
+}
 /*
  Created by ZenScriptMaker<https://www.github.com/CannonFotter/ZenScriptMaker>
  */

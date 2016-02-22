@@ -1,16 +1,17 @@
-var zm = function () {
-};
-zm.prototype.format = function (str, params) {
+var $;
+function init(jQuery) {
+  $ = jQuery;
+}
+function format(str, params) {
   var reg = /{(\d+)}/gm;
   return str.replace(reg, function (match, name) {
     return params[~~name];
   });
-};
-zm.prototype.getRealCraft = function (input) {
+}
+function getRealCraft(input) {
   /* 原理说明：
    * 先确定合成表的实际大小，然后重新转换成定长数组
    */
-  //console.log(input);
   //横向距离
   var hStart = 0,
     hEnd = 0,
@@ -47,7 +48,6 @@ zm.prototype.getRealCraft = function (input) {
           //是第一个不是null的槽么？
           isFirstValidSlot = 0;
         }
-
         //如果默认的结束位置，比现在的位置大，那么应该修正结束位置
         //首尾算法不一样的原因，是因为循环顺序，离首位越来越远，离末尾越来越近
         vEnd = (vEnd < j) ? j : vEnd;
@@ -65,25 +65,23 @@ zm.prototype.getRealCraft = function (input) {
     }
   }
   return arr;
-};
-zm.prototype.getTemplate = function () {
+}
+function getTemplate() {
   var templates = [];
   templates['addShaped'] = 'recipes.addShaped({0}, {1});';
   templates['addShapeless'] = 'recipes.addShapeless({0}, {1});';
   templates['removeShaped'] = 'recipes.removeShaped({0}, {1});';
   templates['removeShapeless'] = 'recipes.removeShapeless({0}, {1});';
   //templates['remove'] = 'recipes.remove({})';
-  var a = $('input[name=r1]').val() + $('input[name=r0]').val();
+  var a = $('input[name=r1]:checked').val() + $('input[name=r0]:checked').val();
   return templates[a];
 
-};
+}
 //把基础参数和高级参数组合到一起
-zm.prototype.mix = function (inputObj) {
-  console.log(inputObj);
+function mix(inputObj) {
   var base = $(inputObj).data('val'),
     adv = $(inputObj).data('adv'),
     fix = '';
-  console.log($(inputObj).data('adv'));
   if (adv != '') {
     $.each($.parseJSON(adv), function (p, q) {
       if (typeof(q) == 'string') {
@@ -100,40 +98,35 @@ zm.prototype.mix = function (inputObj) {
     });
   }
   return base + fix;
-};
-
-
-zm.prototype.preBuild = function (opt) {
+}
+function preBuild(opt) {
   //如果是true，说明是相对位置
   var slots = $('input[name=i]'),
-    result = [],
-    _this = this;
+    result = [];
   $.each(slots, function (k, v) {
     var row = $(v).data('row'),
       num = $(v).data('num');
     //重建二维数组
     //傻逼js,php大法好
     result[row] = (result[row]) ? result[row] : [];
-    result[row][num] = _this.mix(v);
+    result[row][num] = mix(v);
   });
   var temp = [];
-  result = (opt) ? _this.getRealCraft(result) : result;
+  result = (opt == '1') ? getRealCraft(result) : result;
   $.each(result, function (k, v) {
     //按行构建
     temp[k] = '[' + v.join(', ') + ']';
   });
   result = '[' + temp.join(', ') + ']';
   return result;
-};
+}
 //按行组合输入数据
-zm.prototype.generate = function (template, opt) {
-  //console.log(this); zm
-  return this.format(this.getTemplate(), [$('input[name=o]').data('val') + ' * ' + $('#number-select').val(), this.preBuild(opt)]);
-};
-
-//测试用
-var a = [
-  ['minecraft:stone', 'minecraft:stone', 'minecraft:stone'],
-  ['null', 'minecraft:stone', 'null'],
-  ['null', 'null', 'null']
-];
+function generate(opt) {
+  return format(getTemplate(), [$('input[name=o]').data('val') + ' * ' + $('#number-select').val(), preBuild(opt)]);
+}
+module.exports.format = format;
+module.exports.getRealCraft = getRealCraft;
+module.exports.mix = mix;
+module.exports.getTemplate = getTemplate;
+module.exports.generate = generate;
+module.exports.init = init;
