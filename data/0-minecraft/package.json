@@ -2,5 +2,14 @@
   "modid": "minecraft",
   "name": "Minecraft",
   "item": "itempanel.csv",
-  "icon": "itempanel_icons"
+  "icon": "itempanel_icons",
+  "pathname": "0-minecraft",
+  "container": {
+    "0": {
+      "id": "crafting-table",
+      "displayname": "Crafting Table",
+      "path": "crafting-table.html",
+      "script": "crafting-table.js"
+    }
+  }
 }

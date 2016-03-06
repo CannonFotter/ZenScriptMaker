@@ -11,17 +11,23 @@
 <body>
 <nav>
   <ul class="nav nav-tabs" id="nav">
-    <li role="presentation" class="active"><a href="#" id="edit">编辑</a></li>
-    <li role="presentation"><a href="#" id="settings">设置</a></li>
-    <!--<li role="presentation"><a href="#">意见反馈</a></li>-->
-    <li role="presentation"><a href="#" id="help">帮助</a></li>
-    <li role="presentation"><a href="#" id="about">关于</a></li>
+    <li role="presentation" class="active"><a href="app/edit.html">编辑</a></li>
+    <li role="presentation"><a href="#">设置</a></li>
+    <li role="presentation"><a href="#">帮助</a></li>
+    <li role="presentation"><a href="#">关于</a></li>
   </ul>
 </nav>
 <main id="main"></main>
-<script src="js/jquery.min.js"></script>
+<script>window.$ = window.jQuery = require("./js/jquery.min.js");</script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.csv.min.js"></script>
-<script src="js/app.js"></script>
+<script>
+  $('#main').load("app/edit.html");
+  $('#nav a').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+      $('#main').load($(this).attr('href'));
+    });
+</script>
 </body>
 </html>
